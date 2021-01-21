@@ -24,23 +24,53 @@ $color-Tertiaire:#99E2D0;     /*vert*/
 }
 
 /*header*/
-.logo
+.logo_main
 {
     position: relative;
+    box-shadow: 0px 4px 6px #c1c1bd;
+    height: 45px;
+    padding-top: 20px;
+    padding-bottom: 5px;
+    text-align: center;
+}
+
+.logo
+{
     width: 42%;
-    left: 30%;
-    margin: auto;
 }
 
 .local{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin-top: 4%;
+    padding: 16px 0;
+    background-color: #8080801f;
 }
+
+.button
+{
+    border-radius: 25px;
+    color:white;
+    cursor:pointer;
+    padding: 15px 36px;
+    box-shadow: inset -2px 12px 20px 8px #FF79DA;
+    background-color:#9356DC ;
+    width: 50%;
+    margin: auto;
+    text-decoration: none;
+}
+
+
 
 /*article class="restaurant"*/
 
+.restaurant
+{
+    background-color: #8080800a;
+    text-align: center;
+    padding-top: 27px;
+    padding-bottom: 37px;
+}
 .menu_nav
 {
     display: flex;
@@ -64,8 +94,50 @@ h1
 
 /*article class="btn_fonction"*/
 
+.btn 
+{
+   margin-bottom: 45px; 
+}
+
+.btn_fonction
+{
+    padding: 0 9%;
+    margin-top: 50px;
+}
+
+.btn_choix, .btn_composition, .btn_degustation
+{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;  
+        justify-content: space-around;
+        margin-bottom: 55px;
+}
+
+ul
+{
+    list-style: none;
+}
 
 
+.number
+{
+  border-radius: 50%;
+    background-color: #9356DC;
+    padding: 4px 9px;
+    height: 20px;
+    color:white;
+}
+
+.btn_nom
+{
+    background-color: #8080800a;
+    padding:    18px 35px;
+    border-radius: 25px;
+    margin-left: -6%;
+    z-index: -1;
+    box-shadow: 0px 4px 6px rgba(0,0,0,0.10);
+}
 
 /*main*/
 #main
@@ -94,6 +166,7 @@ h1
 {
     background-image: url("../../restaurants/img4.jpg")
 }
+
 
 /*footer*/
 
