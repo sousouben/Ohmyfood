@@ -1,7 +1,54 @@
 body {
   font-family: "Roboto", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
+h1, h2, h3, h4 {
+  font-family: "Shrikhand", cursive;
+  font-size: 1rem;
+}
+
+/*violet*/
+/*rose*/
+/*vert*/
+/*animation*/
+/*header*/
+.logo {
+  position: relative;
+  width: 42%;
+  left: 30%;
+  margin: auto;
+}
+
+.local {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 4%;
+}
+
+/*article class="restaurant"*/
+.menu_nav {
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  text-align: center;
+}
+
+.restaurant p {
+  text-align: center;
+}
+
+.button {
+  text-align: center;
+}
+
+/*article class="btn_fonction"*/
+/*main*/
 #img1 {
   background-image: url("../../restaurants/img1.jpg");
 }
@@ -16,6 +63,11 @@ body {
 
 #img4 {
   background-image: url("../../restaurants/img4.jpg");
+}
+
+/*footer*/
+.logo_footer {
+  width: 23%;
 }
 
 /*# sourceMappingURL=style.css.map */
