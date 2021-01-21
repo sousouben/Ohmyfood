@@ -49,6 +49,12 @@ h1 {
 
 /*article class="btn_fonction"*/
 /*main*/
+#main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 #img1 {
   background-image: url("../../restaurants/img1.jpg");
 }
