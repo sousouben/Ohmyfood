@@ -7,12 +7,6 @@ body {
   font-size: 1rem;
 }
 
-@color-primaire :#9356DC;
-/*violet*/
-@color-Secondaire :#FF79DA;
-/*rose*/
-@color-Tertiaire :#99E2D0;
-/*vert*/
 /*animation*/
 /*header*/
 .logo_main {

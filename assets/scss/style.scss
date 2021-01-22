@@ -8,10 +8,14 @@ body
     font-size:1rem;
 }
 
-
-@color-primaire:#9356DC;      /*violet*/
-@color-Secondaire:#FF79DA;    /*rose*/
-@color-Tertiaire:#99E2D0;     /*vert*/
+//* variables couleurs*//
+$violet:#9356DC;     
+$rose:#FF79DA;   
+$vert:#99E2D0;  
+$vert-foncé:#139273;
+$gris_clair:#f6f6f6;
+$gris-foncé:#eaeaea;
+$noir:#353535;
 
 /*animation*/
 
@@ -48,7 +52,7 @@ body
     flex-direction: row;
     justify-content: center;
     padding: 16px 0;
-    background-color: #eaeaea;
+    background-color: $gris-foncé;
    
 }
 
@@ -63,8 +67,8 @@ body
     color:white;
     cursor:pointer;
     padding: 14px 6px;
-    box-shadow: inset -2px 12px 20px 8px #FF79DA;
-    background-color:#9356DC ;
+    box-shadow: inset -2px 12px 20px 8px $rose;
+    background-color:$violet ;
     width: 54%;
     margin: auto;
     text-decoration: none;
@@ -80,7 +84,7 @@ body
 
 .restaurant
 {
-    background-color: #f6f6f6;
+    background-color: $gris_clair;
     text-align: center;
     padding-top: 17px;
     padding-bottom: 37px;
@@ -142,7 +146,7 @@ ul
 .number
 {
   border-radius: 50%;
-    background-color: #9356DC;
+    background-color: $violet;
     padding: 4px 9px;
     height: 20px;
     color:white;
@@ -154,7 +158,7 @@ ul
 
 .btn_nom
 {
-    background-color: #f6f6f6;
+    background-color:$gris_clair;
     padding:    26px 30px;
     border-radius: 21px;
     margin-left: -6%;
@@ -183,7 +187,7 @@ ul
 .btn_nom3 .fas
 {
     margin-right: 7%;
-    color: #9356DC; 
+    color: $violet; 
 }
 
 /*main*/
@@ -199,7 +203,7 @@ ul
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: #f6f6f6;
+    background-color: $gris_clair;
     padding-bottom: 39px;
 }
 
@@ -284,8 +288,8 @@ h3
     margin-right: 12px;
     border-radius: 3px;
     float: right;
-    color: #139273;
-    background-color:#99E2D0; 
+    color: $vert-foncé;
+    background-color:$vert; 
 }
 
 
@@ -294,7 +298,7 @@ h3
 footer
 {
    padding:11px 0px 37px 24px;
-    background-color: #353535;
+    background-color: $noir;
     
 }
 
