@@ -25,6 +25,14 @@ $noir:#353535;
 }
 
 /*header*/
+
+.logo_fleche .fas //*menu*//
+{
+    position: absolute;
+    top: 28px;
+    left: 21px;
+}
+
 .logo_main
 {
     position: relative;
@@ -78,7 +86,39 @@ $noir:#353535;
 
 }
 
+//*article cart*//
 
+#cart
+{
+   background-color: #f6f6f6;
+    padding-bottom: 90px; 
+}
+
+.img_bg1
+{
+    background-image: url("../../restaurants/img1.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 231px;        
+}
+
+.menu_food
+{
+   box-sizing: border-box;
+    padding: 20px 20px;
+    margin-top: -40px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    z-index: 10;
+    background-color: #f6f6f6;
+}
+
+.titre_menu_box
+{
+    font-family: 'Shrikhand', cursive;
+    font-size: 24px;
+    letter-spacing: 1px;
+}
 
 /*article class="restaurant"*/
 
@@ -290,6 +330,12 @@ h3
     float: right;
     color: $vert-foncé;
     background-color:$vert; 
+}
+
+//*menu food *//
+.menu_food
+{
+    
 }
 
 
