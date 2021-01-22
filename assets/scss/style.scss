@@ -5,17 +5,13 @@ body
     flex-direction: column;
     justify-content: center;
     margin: 0;
+    font-size:1rem;
 }
 
-h1, h2, h3, h4
-{
-    font-family: 'Shrikhand', cursive;
-    font-size: 1rem;
-}
 
-$color-primaire:#9356DC;      /*violet*/
-$color-Secondaire:#FF79DA;    /*rose*/
-$color-Tertiaire:#99E2D0;     /*vert*/
+@color-primaire:#9356DC;      /*violet*/
+@color-Secondaire:#FF79DA;    /*rose*/
+@color-Tertiaire:#99E2D0;     /*vert*/
 
 /*animation*/
 
@@ -36,7 +32,7 @@ $color-Tertiaire:#99E2D0;     /*vert*/
 
 .logo
 {
-    width: 39%;
+    width: 41%;
     margin-bottom: -18px;
 }
 
@@ -86,7 +82,7 @@ $color-Tertiaire:#99E2D0;     /*vert*/
 {
     background-color: #f6f6f6;
     text-align: center;
-    padding-top: 27px;
+    padding-top: 17px;
     padding-bottom: 37px;
 }
 .menu_nav
@@ -99,6 +95,7 @@ h1
 {
     text-align: center; 
     margin-bottom: 1px;
+    font-size: 21px;
 }
 
 .restaurant p
@@ -113,7 +110,7 @@ h1
 
 .btn 
 {
-   margin-bottom: 45px;
+   margin-bottom: 29px;
     padding-left: 7%;
 }
 
@@ -121,6 +118,7 @@ h1
 {
     margin:auto;
     margin-top: 50px;
+    margin-bottom: 69px;
 }
 
 .btn_choix, .btn_composition, .btn_degustation
@@ -129,8 +127,9 @@ h1
         flex-direction: row;
         flex-wrap: nowrap;  
         justify-content: space-around;
-        margin-bottom: 55px;
+        margin-bottom: 24px;
         font-weight: 700;
+    padding-right: 2%;
 }
 
 ul
@@ -160,7 +159,7 @@ ul
     border-radius: 21px;
     margin-left: -6%;
     z-index: -1;
-    box-shadow: 0px 4px 6px rgba(0,0,0,0.10);
+    box-shadow: 1px 6px 6px rgba(0,0,0,0.10);
     width: 70%;
 }
 
@@ -171,7 +170,7 @@ ul
     border-radius: 21px;
     margin-left: -6%;
     z-index: -1;
-    box-shadow: 0px 4px 6px rgba(0,0,0,0.10);
+    box-shadow: 1px 6px 6px rgba(0,0,0,0.10);
     width: 70%;
 }   
 
@@ -201,7 +200,7 @@ ul
     flex-direction: column;
     justify-content: center;
     background-color: #f6f6f6;
-    padding-bottom: 36px;
+    padding-bottom: 39px;
 }
 
 .one, .two, .three, .four
@@ -268,13 +267,14 @@ a
 
 .coeur
 {
-    padding-top: 28px;
+    padding-top: 20px;
     
 }
 
 h3
 {
     margin-bottom: -15px;
+    margin-top: 10px;
 }
 
 .new
