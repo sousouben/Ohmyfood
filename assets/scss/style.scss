@@ -48,6 +48,48 @@ $noir:#353535;
     margin-bottom: -18px;
 }
 
+@media (min-width: 585px)
+{
+    .logo
+    {
+        width: 36%;
+    }
+}
+
+@media (min-width:639px)
+{
+    .logo
+    {
+        width: 31%;
+    }
+}
+
+@media (min-width:760px)
+{
+    .logo
+    {
+        width: 27%;
+    }
+    
+}
+
+@media (min-width:910px)
+{
+    .logo
+    {
+        width: 23%;
+    }
+    
+}
+
+@media (min-width:1039px)
+{
+    .logo
+    {
+        width: 19%;
+    }
+}
+
 .w
 {
     font-weight: 500;
@@ -66,7 +108,7 @@ $noir:#353535;
 
 .local .fas 
 {
-        margin-right: 5%;
+        margin-right: 3%;
 }
 
 .button
@@ -77,13 +119,30 @@ $noir:#353535;
     padding: 14px 6px;
     box-shadow: inset -2px 12px 20px 8px $rose;
     background-color:$violet ;
-    width: 54%;
+    width:auto;
     margin: auto;
     text-decoration: none;
     text-align: center;
     margin-top: 12px;
     margin-bottom: 19px;
 
+}
+
+.modebig
+{
+    display:block;
+}
+
+@media (min-width:540px)
+{
+    .modebig
+    {
+        display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-left: 2%;
+    MARGIN-RIGHT: 2%;
+    }
 }
 
 //*article cart*//
@@ -142,6 +201,7 @@ $noir:#353535;
     font-family: 'Shrikhand', cursive;
     font-size: 24px;
     letter-spacing: 1px;
+    display: flex;
     
 }
 
@@ -153,10 +213,8 @@ $noir:#353535;
 
 .far.fa-heart
 {
-    position:absolute;
-    right: 48px;
-    top:295px;
-    
+    margin-top: 17px;
+    margin-left: 19%;
 }
 
 //*menu carte*//
@@ -291,28 +349,22 @@ ul
     width: 70%;
 }
 
-.btn_nom3 
+.btn_nom:active
 {
     background-color: #f5edff;
-     padding:    26px 30px;
-    border-radius: 21px;
-    margin-left: -6%;
-    z-index: -1;
-    box-shadow: 1px 6px 6px rgba(0,0,0,0.10);
-    width: 70%;
+     
 }   
-
 
 .btn_nom .fas
 {
     margin-right: 7%;
 }
 
-.btn_nom3 .fas
+.btn_nom .fas:active
 {
-    margin-right: 7%;
-    color: $violet; 
+    color: $violet;
 }
+
 
 /*main*/
  
@@ -320,6 +372,14 @@ ul
 {
   margin-top: 45px;
     margin-left: 5%;
+}
+
+@media (min-width: 540px)
+{
+    #main h2
+    {
+        margin-left: 23%;
+    }
 }
 
 #main
@@ -342,6 +402,13 @@ ul
     width: 90%;
 }
 
+@media (min-width: 540px)
+{
+   .one, .two, .three, .four
+    {
+        width: 53%;
+    }
+}
 #img1
 {
     background-image: url("../../restaurants/img1.jpg");
@@ -416,12 +483,46 @@ h3
     background-color:$vert; 
 }
 
-//*menu food *//
-.menu_food
+.btncommander
 {
-    
+    border-radius: 25px;
+    color: white;
+    cursor: pointer;
+    padding: 14px 6px;
+    box-shadow: inset -2px 12px 20px 8px #FF79DA;
+    background-color: #9356DC;
+    width: 54%;
+    margin: auto;
+    text-decoration: none;
+    text-align: center;
+    margin-top: 12px;
+    margin-bottom: 19px;
 }
 
+@media (min-width: 540px)
+{
+    .btncommander
+    {
+        width: 24%;
+    }
+}
+
+.btncommander1
+{
+    border-radius: 25px;
+    color: white;
+    cursor: pointer;
+    padding: 14px 30px;
+    box-shadow: inset -2px 12px 20px 8px #FF79DA;
+    background-color: #9356DC; 
+    text-decoration: none;
+    width: 26%;
+    position: relative;
+    top: 32px;
+   left: 27%;
+    display: flex;
+    justify-content: center;
+}
 
 /*footer*/
 
@@ -438,6 +539,23 @@ footer p
     margin-bottom: 8px;
     color:white;
     font-family: 'Shrikhand', cursive;
+    margin-left: 0;
+}
+
+@media (min-width:540px)
+{
+    footer p
+    {
+        margin-left: 42%;
+    }
+}
+
+@media (min-width:1022px) 
+{
+    footer p
+    {
+        margin-left: 47%;
+    }
 }
 
 .container-footer
@@ -455,16 +573,30 @@ footer a
     color: white;
 }
 
-footer .fa-utensils
+footer .fa-utensils, footer .fa-hands-helping
 {
     color: white;
     margin-right: 5%;
 }
 
-footer .fa-hands-helping
+@media (min-width:540px)
 {
-  color: white;
-    margin-right: 3%; 
+    footer .fa-utensils,footer .fa-hands-helping
+    {
+        margin-right: 1%;
+    }
 }
 
 
+.nav_footer
+{
+    text-align: left;
+}
+
+@media (min-width:540px)
+{
+    .nav_footer
+    {
+        text-align: center;
+    }
+}
