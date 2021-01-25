@@ -8,6 +8,11 @@ body {
   font-size: 1rem;
 }
 
+h6 {
+  visibility: collapse;
+  display: none;
+}
+
 /*animation*/
 /*header*/
 .logo_fleche .fas {
@@ -267,8 +272,7 @@ ul {
   box-shadow: 1px 6px 6px rgba(0, 0, 0, 0.1);
   width: 70%;
 }
-
-.btn_nom:active {
+.btn_nom:hover {
   background-color: #f5edff;
 }
 
