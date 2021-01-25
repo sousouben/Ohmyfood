@@ -241,15 +241,28 @@ $noir:#353535;
     font-weight: 400;
     font-size: 15px;
     margin-bottom: 23px;
+   
 }
 
+hr
+{
+    margin-bottom: 14px;
+    width: 40px;
+    height: 4px;
+    border-style: none;
+    background-color: $vert;
+    position: relative;
+    right: 43%;
+    bottom: 16px;
+}
+  
 .entrées_food, .plats_food ,.desserts_food
 {
     border-radius: 15px;
     margin-bottom: 14px;
     background-color: white;
     display: flex;
-    flex-direction: column;
+    flex-direction:column;
     box-shadow: 0px 4px 6px rgba(0,0,0,0.10);
     padding: 0 12px;
 }
@@ -258,7 +271,9 @@ $noir:#353535;
 {
     margin-bottom: 0;
     font-size: 92%;
-}
+    
+    }
+
 
 .entrées_food p, .plats_food p ,.desserts_food p
 {
@@ -267,12 +282,39 @@ $noir:#353535;
     font-size: 82%;
 }
 
+.text
+{
+    margin:-8px 0px 14px 0px;
+}
+
+.prix
+{
+    position:relative;
+   bottom: 33px;
+    left: 87%;
+}
+
 .euros
 {
-    position: relative;
-    left: 87%;
-    bottom: 22px;
+    position: absolute;
+    display:flex;
+    flex-direction: row;
+   
 }
+
+.barre
+{
+    
+    background-color:$vert;
+    display: flex;
+    
+}
+
+.fas.fa-check-circle.fa-lg
+{
+    color:white;
+}
+
 
 /*article class="restaurant"*/
 

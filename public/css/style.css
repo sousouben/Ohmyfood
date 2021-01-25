@@ -180,6 +180,17 @@ h6 {
   margin-bottom: 23px;
 }
 
+hr {
+  margin-bottom: 14px;
+  width: 40px;
+  height: 4px;
+  border-style: none;
+  background-color: #99E2D0;
+  position: relative;
+  right: 43%;
+  bottom: 16px;
+}
+
 .entrées_food, .plats_food, .desserts_food {
   border-radius: 15px;
   margin-bottom: 14px;
@@ -201,10 +212,29 @@ h6 {
   font-size: 82%;
 }
 
-.euros {
+.text {
+  margin: -8px 0px 14px 0px;
+}
+
+.prix {
   position: relative;
+  bottom: 33px;
   left: 87%;
-  bottom: 22px;
+}
+
+.euros {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+}
+
+.barre {
+  background-color: #99E2D0;
+  display: flex;
+}
+
+.fas.fa-check-circle.fa-lg {
+  color: white;
 }
 
 /*article class="restaurant"*/
