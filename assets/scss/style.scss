@@ -23,12 +23,17 @@ $gris_clair:#f6f6f6;
 $gris-foncé:#eaeaea;
 $noir:#353535;
 
-/*animation*/
+/*loader*/
 
-#animation
+.loader
 {
-
-}
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    color:$rose ;
+    font-size: 10rem;
+   }
 
 /*header*/
 
@@ -241,7 +246,7 @@ $noir:#353535;
     font-weight: 400;
     font-size: 15px;
     margin-bottom: 23px;
-   
+
 }
 
 hr
@@ -255,7 +260,7 @@ hr
     right: 43%;
     bottom: 16px;
 }
-  
+
 .entrées_food, .plats_food ,.desserts_food
 {
     border-radius: 15px;
@@ -271,8 +276,8 @@ hr
 {
     margin-bottom: 0;
     font-size: 92%;
-    
-    }
+
+}
 
 
 .entrées_food p, .plats_food p ,.desserts_food p
@@ -290,7 +295,7 @@ hr
 .prix
 {
     position:relative;
-   bottom: 33px;
+    bottom: 33px;
     left: 87%;
 }
 
@@ -299,15 +304,15 @@ hr
     position: absolute;
     display:flex;
     flex-direction: row;
-   
+
 }
 
 .barre
 {
-    
+
     background-color:$vert;
     display: flex;
-    
+
 }
 
 .fas.fa-check-circle.fa-lg
@@ -395,23 +400,21 @@ ul
     z-index: -1;
     box-shadow: 1px 6px 6px rgba(0,0,0,0.10);
     width: 70%;
-    
-&:hover
-{
-    background-color: #f5edff;
 
-}  
-    
+    &:hover
+    {
+        background-color:$violet ;  
+
+    }
 }
 
 .btn_nom .fas
 {
     margin-right: 7%;
-}
-
-.btn_nom .fas:active
-{
-    color: $violet;
+    &:hover
+    {
+        color: $violet;
+    }
 }
 
 

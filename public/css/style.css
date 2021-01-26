@@ -13,7 +13,16 @@ h6 {
   display: none;
 }
 
-/*animation*/
+/*loader*/
+.loader {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  color: #FF79DA;
+  font-size: 10rem;
+}
+
 /*header*/
 .logo_fleche .fas {
   position: absolute;
@@ -303,14 +312,13 @@ ul {
   width: 70%;
 }
 .btn_nom:hover {
-  background-color: #f5edff;
+  background-color: #9356DC;
 }
 
 .btn_nom .fas {
   margin-right: 7%;
 }
-
-.btn_nom .fas:active {
+.btn_nom .fas:hover {
   color: #9356DC;
 }
 
