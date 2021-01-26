@@ -169,7 +169,8 @@ $noir:#353535;
     background-image: url("../../restaurants/img1.jpg");
     background-position: center;
     background-size: cover;
-    height: 231px;        
+    height: 231px; 
+    width: 100vw;
 }
 
 .img_bg2
@@ -177,7 +178,8 @@ $noir:#353535;
     background-image: url("../../restaurants/img2.jpg");
     background-position: center;
     background-size: cover;
-    height: 231px;        
+    height: 231px; 
+      width: 100vw;
 }
 
 .img_bg3
@@ -185,7 +187,8 @@ $noir:#353535;
     background-image: url("../../restaurants/img3.jpg");
     background-position: center;
     background-size: cover;
-    height: 231px;        
+    height: 231px;
+      width: 100vw;
 }
 
 .img_bg4
@@ -193,7 +196,8 @@ $noir:#353535;
     background-image: url("../../restaurants/img4.jpg");
     background-position: center;
     background-size: cover;
-    height: 231px;        
+    height: 231px; 
+      width: 100vw;
 }
 
 .menu_food
@@ -267,9 +271,11 @@ hr
     margin-bottom: 14px;
     background-color: white;
     display: flex;
-    flex-direction:column;
+    flex-direction:row;
+    justify-content:  space-between;
     box-shadow: 0px 4px 6px rgba(0,0,0,0.10);
-    padding: 0 12px;
+    padding-left:12px;
+    height: 67px;
 }
 
 .entrées_food h4, .plats_food h4 ,.desserts_food h4
@@ -285,6 +291,7 @@ hr
     margin-bottom: 0;
     margin-top: 2%;
     font-size: 82%;
+
 }
 
 .text
@@ -295,8 +302,7 @@ hr
 .prix
 {
     position:relative;
-    bottom: 33px;
-    left: 87%;
+    
 }
 
 .euros
@@ -311,8 +317,9 @@ hr
 {
 
     background-color:$vert;
-    display: flex;
-
+    border-radius: 0 15px 15px 0;
+    width:13%;
+    padding:24px 0;
 }
 
 .fas.fa-check-circle.fa-lg
@@ -559,23 +566,24 @@ h3
     }
 }
 
-.btncommander1
+.button1
 {
     border-radius: 25px;
-    color: white;
     cursor: pointer;
     padding: 14px 30px;
     box-shadow: inset -2px 12px 20px 8px #FF79DA;
     background-color: #9356DC; 
-    text-decoration: none;
     width: 26%;
-    position: relative;
-    top: 32px;
-    left: 27%;
-    display: flex;
-    justify-content: center;
+   margin:auto;
+    margin-top: 50px;
 }
 
+.btncommander1
+{
+    color:white;
+    text-decoration: none;
+    text-align: center;
+}
 /*footer*/
 
 footer
