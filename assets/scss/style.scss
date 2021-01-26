@@ -53,6 +53,14 @@ $noir:#353535;
     text-align: center;
 }
 
+@media (min-width: 540px)
+{
+    .logo_main
+    {
+        box-shadow:none;
+    }
+}
+
 .logo
 {
     width: 41%;
@@ -171,6 +179,7 @@ $noir:#353535;
     background-size: cover;
     height: 231px; 
     width: 100vw;
+    border-radius: none;
 }
 
 .img_bg2
@@ -180,6 +189,7 @@ $noir:#353535;
     background-size: cover;
     height: 231px; 
       width: 100vw;
+    border-radius: none;
 }
 
 .img_bg3
@@ -189,6 +199,7 @@ $noir:#353535;
     background-size: cover;
     height: 231px;
       width: 100vw;
+    border-radius: none;
 }
 
 .img_bg4
@@ -198,6 +209,17 @@ $noir:#353535;
     background-size: cover;
     height: 231px; 
       width: 100vw;
+    border-radius: none;
+}
+
+@media (min-width:540px)
+{
+    .img_bg1, .img_bg2, .img-bg3, .img-bg4
+    {
+        width: 51%;
+        margin: auto;
+        border-radius: 15px 15px;
+    }
 }
 
 .menu_food
@@ -211,13 +233,30 @@ $noir:#353535;
     background-color: #f6f6f6;
 }
 
+@media (min-width:540px)
+{
+    .menu_food
+    {
+        margin-top: 0;
+    }
+}
+
 .titre_menu_box
 {
     font-family: 'Shrikhand', cursive;
     font-size: 24px;
     letter-spacing: 1px;
     display: flex;
+    justify-content: left;
 
+}
+
+@media (min-width:540px)
+{
+    .titre_menu_box
+    {
+       justify-content: center; 
+    }
 }
 
 .titre_menu_box h1
@@ -238,6 +277,14 @@ $noir:#353535;
     display: block; 
     margin: auto;
     width: 85%;
+}
+
+@media (min-width:540px)
+{
+    .entrées, .plats, .desserts
+    {
+        width: 50%;
+    }
 }
 
 .plats, .desserts
@@ -356,27 +403,15 @@ hr
 
 .btn 
 {
-    margin-bottom: 29px;
+    margin-bottom: -17px;
     padding-left: 7%;
 }
 
 .btn_fonction
 {
-    margin:auto;
-    margin-top: 50px;
-    margin-bottom: 69px;
+    padding-bottom: 36px;
 }
 
-.btn_choix, .btn_composition, .btn_degustation
-{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;  
-    justify-content: space-around;
-    margin-bottom: 24px;
-    font-weight: 700;
-    padding-right: 2%;
-}
 
 ul
 {
@@ -393,7 +428,7 @@ ul
     height: 20px;
     color:white;
     position: relative;
-    top:20px;
+    top:45px;
     left:4%;
 
 }
@@ -403,21 +438,25 @@ ul
     background-color:$gris_clair;
     padding:    26px 30px;
     border-radius: 21px;
-    margin-left: -6%;
+    margin:auto;
     z-index: -1;
     box-shadow: 1px 6px 6px rgba(0,0,0,0.10);
     width: 70%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-weight: bold;
 
     &:hover
     {
-        background-color:$violet ;  
+        background-color:#f5edff;  
 
     }
-}
-
-.btn_nom .fas
+&.fas
 {
     margin-right: 7%;
+    }
+    
     &:hover
     {
         color: $violet;
@@ -576,6 +615,7 @@ h3
     width: 26%;
    margin:auto;
     margin-top: 50px;
+    text-align: center;
 }
 
 .btncommander1
