@@ -109,7 +109,7 @@ h6 {
   display: block;
 }
 
-@media (min-width: 540px) {
+@media (min-width: 740px) {
   .modebig {
     display: flex;
     flex-direction: row;
@@ -160,7 +160,7 @@ h6 {
 }
 
 @media (min-width: 540px) {
-  .img_bg1, .img_bg2, .img-bg3, .img-bg4 {
+  .img_bg1, .img_bg2, .img_bg3, .img_bg4 {
     width: 51%;
     margin: auto;
     border-radius: 15px 15px;
@@ -207,7 +207,7 @@ h6 {
 .entrées, .plats, .desserts {
   display: block;
   margin: auto;
-  width: 85%;
+  width: 94%;
 }
 
 @media (min-width: 540px) {
@@ -236,6 +236,21 @@ hr {
   bottom: 16px;
 }
 
+@media (min-width: 665px) {
+  hr {
+    right: 44%;
+  }
+}
+@media (min-width: 1000px) {
+  hr {
+    right: 46%;
+  }
+}
+@media (min-width: 1250px) {
+  hr {
+    right: 47%;
+  }
+}
 .entrées_food, .plats_food, .desserts_food {
   border-radius: 15px;
   margin-bottom: 14px;
@@ -260,7 +275,9 @@ hr {
 }
 
 .text {
-  margin: -8px 0px 14px 0px;
+  margin: 0px 0px 14px 0px;
+  width: 61%;
+  font-size: 82%;
 }
 
 .prix {
@@ -268,9 +285,10 @@ hr {
 }
 
 .euros {
-  position: absolute;
+  position: relative;
   display: flex;
   flex-direction: row;
+  top: 44%;
 }
 
 .barre {
@@ -278,6 +296,7 @@ hr {
   border-radius: 0 15px 15px 0;
   width: 13%;
   padding: 24px 0;
+  text-align: center;
 }
 
 .fas.fa-check-circle.fa-lg {
@@ -328,6 +347,21 @@ ul {
   left: 4%;
 }
 
+@media (min-width: 540px) {
+  .number {
+    left: 21%;
+  }
+}
+@media (min-width: 645px) {
+  .number {
+    left: 23%;
+  }
+}
+@media (min-width: 740px) {
+  .number {
+    left: 0;
+  }
+}
 .btn_nom {
   background-color: #f6f6f6;
   padding: 26px 30px;
@@ -351,6 +385,21 @@ ul {
   color: #9356DC;
 }
 
+@media (min-width: 740px) {
+  .btn_nom .fas {
+    margin-right: 8%;
+  }
+}
+@media (min-width: 540px) {
+  .btn_nom {
+    width: 42%;
+  }
+}
+@media (min-width: 740px) {
+  .btn_nom {
+    width: 66%;
+  }
+}
 /*main*/
 #main h2 {
   margin-top: 45px;

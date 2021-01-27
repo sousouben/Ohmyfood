@@ -33,7 +33,7 @@ $noir:#353535;
     justify-content: center;
     color:$rose ;
     font-size: 10rem;
-   }
+}
 
 /*header*/
 
@@ -152,7 +152,7 @@ $noir:#353535;
     display:block;
 }
 
-@media (min-width:540px)
+@media (min-width:740px)
 {
     .modebig
     {
@@ -188,7 +188,7 @@ $noir:#353535;
     background-position: center;
     background-size: cover;
     height: 231px; 
-      width: 100vw;
+    width: 100vw;
     border-radius: none;
 }
 
@@ -198,7 +198,7 @@ $noir:#353535;
     background-position: center;
     background-size: cover;
     height: 231px;
-      width: 100vw;
+    width: 100vw;
     border-radius: none;
 }
 
@@ -208,13 +208,13 @@ $noir:#353535;
     background-position: center;
     background-size: cover;
     height: 231px; 
-      width: 100vw;
+    width: 100vw;
     border-radius: none;
 }
 
 @media (min-width:540px)
 {
-    .img_bg1, .img_bg2, .img-bg3, .img-bg4
+    .img_bg1, .img_bg2, .img_bg3, .img_bg4
     {
         width: 51%;
         margin: auto;
@@ -255,7 +255,7 @@ $noir:#353535;
 {
     .titre_menu_box
     {
-       justify-content: center; 
+        justify-content: center; 
     }
 }
 
@@ -272,11 +272,13 @@ $noir:#353535;
 }
 
 //*menu carte*//
+
+
 .entrées, .plats, .desserts
 {
     display: block; 
     margin: auto;
-    width: 85%;
+    width: 94%;
 }
 
 @media (min-width:540px)
@@ -312,6 +314,31 @@ hr
     bottom: 16px;
 }
 
+@media (min-width: 665px)
+{
+    hr 
+    {
+        right: 44%;
+    }
+}
+
+@media (min-width: 1000px)
+{
+    hr 
+    {
+        right: 46%;
+    }
+}
+
+@media (min-width: 1250px)
+{
+    hr 
+    {
+        right: 47%;
+    }
+}
+
+
 .entrées_food, .plats_food ,.desserts_food
 {
     border-radius: 15px;
@@ -343,20 +370,23 @@ hr
 
 .text
 {
-    margin:-8px 0px 14px 0px;
+    margin:0px 0px 14px 0px;
+    width: 61%;
+    font-size: 82%;
 }
 
 .prix
 {
     position:relative;
-    
+
 }
 
 .euros
 {
-    position: absolute;
+    position:relative;
     display:flex;
     flex-direction: row;
+    top:44%;
 
 }
 
@@ -367,6 +397,7 @@ hr
     border-radius: 0 15px 15px 0;
     width:13%;
     padding:24px 0;
+    text-align: center;
 }
 
 .fas.fa-check-circle.fa-lg
@@ -433,6 +464,31 @@ ul
 
 }
 
+@media (min-width: 540px)
+{
+    .number
+    {
+        left: 21%;
+    }
+}
+
+@media (min-width: 645px)
+{
+    .number
+    {
+        left: 23%;
+    }
+}
+
+@media (min-width: 740px)
+{
+    .number
+    {
+       left: 0; 
+    }
+}
+
+
 .btn_nom
 {
     background-color:$gris_clair;
@@ -452,17 +508,41 @@ ul
         background-color:#f5edff;  
 
     }
-&.fas
-{
-    margin-right: 7%;
+    &.fas
+    {
+        margin-right: 7%;
     }
-    
+
     &:hover
     {
         color: $violet;
     }
 }
 
+@media (min-width: 740px)
+{
+   .btn_nom .fas
+    {
+        margin-right: 8%;
+    }
+}
+
+
+@media (min-width: 540px)
+{
+    .btn_nom
+    {
+        width: 42%;
+    }
+}
+
+@media (min-width: 740px)
+{
+    .btn_nom
+    {
+        width: 66%;
+    }
+}
 
 /*main*/
 
@@ -613,7 +693,7 @@ h3
     box-shadow: inset -2px 12px 20px 8px #FF79DA;
     background-color: #9356DC; 
     width: 26%;
-   margin:auto;
+    margin:auto;
     margin-top: 50px;
     text-align: center;
 }
