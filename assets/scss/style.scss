@@ -67,6 +67,7 @@ $noir:#353535;
     }
 
 }
+
 /*header*/
 
 .logo_fleche .fas //*menu*//
@@ -156,13 +157,20 @@ $noir:#353535;
     cursor:pointer;
     padding: 14px 6px;
     box-shadow: inset -2px 12px 20px 8px $rose;
-    background-color:$violet ;
+    background-color: $violet;
+    width: 54%;
     width:auto;
     margin: auto;
     text-decoration: none;
     text-align: center;
     margin-top: 12px;
     margin-bottom: 19px;
+    
+    &:hover{
+        transition-duration: 1s;
+        opacity: 0.75;
+           
+    }
 
 }
 
@@ -396,14 +404,14 @@ hr
 .text
 {
     margin:0px 0px 14px 0px;
-    width: 61%;
+    width: 85%;
     font-size: 82%;
 }
 
 .prix
 {
     position:relative;
-    width: 39%;
+    width: 15%;
 
 }
 
@@ -421,11 +429,27 @@ hr
 
     background-color:$vert;
     border-radius: 0 15px 15px 0;
-    width:13%;
+    width:0; //*WIDTH 16%*//
     padding:24px 0;
     text-align: center;
+    animation-duration: 5s;
+  animation-name: glissement;
+  animation-fill-mode: backwards;
+animation-delay: 1s;
 }
 
+@keyframes glissement
+{
+    0% { 
+        width: 0;
+    }
+    
+    100%{
+        width: 16%;
+    }
+    
+
+}
 .fas.fa-check-circle.fa-lg
 {
     color:white;
@@ -663,7 +687,7 @@ a
     position: relative;
     left:19vw;
     bottom:17px;
-    color: white;
+    color: $gris_clair;
     transition: background 0.5s;
     background-clip: text;
     -webkit-background-clip: text;
@@ -717,6 +741,11 @@ h3
     text-align: center;
     margin-top: 12px;
     margin-bottom: 19px;
+    
+    &:hover{
+        transition-duration: 1s;
+        opacity: 0.75;
+    }
 
     @media (min-width: 540px)
 

@@ -125,12 +125,17 @@ h6 {
   padding: 14px 6px;
   box-shadow: inset -2px 12px 20px 8px #FF79DA;
   background-color: #9356DC;
+  width: 54%;
   width: auto;
   margin: auto;
   text-decoration: none;
   text-align: center;
   margin-top: 12px;
   margin-bottom: 19px;
+}
+.button:hover {
+  transition-duration: 1s;
+  opacity: 0.75;
 }
 
 .modebig {
@@ -319,13 +324,13 @@ hr {
 
 .text {
   margin: 0px 0px 14px 0px;
-  width: 61%;
+  width: 85%;
   font-size: 82%;
 }
 
 .prix {
   position: relative;
-  width: 39%;
+  width: 15%;
 }
 
 .euros {
@@ -338,11 +343,23 @@ hr {
 .barre {
   background-color: #99E2D0;
   border-radius: 0 15px 15px 0;
-  width: 13%;
+  width: 0;
   padding: 24px 0;
   text-align: center;
+  animation-duration: 5s;
+  animation-name: glissement;
+  animation-fill-mode: backwards;
+  animation-delay: 1s;
 }
 
+@keyframes glissement {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 16%;
+  }
+}
 .fas.fa-check-circle.fa-lg {
   color: white;
 }
@@ -527,7 +544,7 @@ a {
   position: relative;
   left: 19vw;
   bottom: 17px;
-  color: white;
+  color: #f6f6f6;
   transition: background 0.5s;
   background-clip: text;
   -webkit-background-clip: text;
@@ -575,6 +592,10 @@ h3 {
   text-align: center;
   margin-top: 12px;
   margin-bottom: 19px;
+}
+.btncommander:hover {
+  transition-duration: 1s;
+  opacity: 0.75;
 }
 @media (min-width: 540px) {
   .btncommander {
