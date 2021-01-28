@@ -73,9 +73,10 @@ h6 {
     width: 19%;
   }
 }
-.w {
+.local_text {
   font-weight: 500;
   font-size: 85%;
+  margin-left: 2%;
 }
 
 .local {
