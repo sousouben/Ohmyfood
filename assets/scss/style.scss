@@ -159,9 +159,10 @@ $noir:#353535;
 
 .img_bg1
 {
-    background-image: url("../../restaurants/img1.jpg");
-    background-position: center;
-    background-size: cover;
+    background:{
+        image: url("../../restaurants/img1.jpg");
+        position: center;
+        size: cover;}
     height: 231px; 
     width: 100vw;
     border-radius: none;
@@ -169,9 +170,10 @@ $noir:#353535;
 
 .img_bg2
 {
-    background-image: url("../../restaurants/img2.jpg");
-    background-position: center;
-    background-size: cover;
+    background:{
+        image: url("../../restaurants/img2.jpg");
+        position: center;
+        size: cover;}
     height: 231px; 
     width: 100vw;
     border-radius: none;
@@ -179,9 +181,10 @@ $noir:#353535;
 
 .img_bg3
 {
-    background-image: url("../../restaurants/img3.jpg");
-    background-position: center;
-    background-size: cover;
+    background:{
+        image: url("../../restaurants/img3.jpg");
+        position: center;
+        size: cover;}
     height: 231px;
     width: 100vw;
     border-radius: none;
@@ -189,9 +192,10 @@ $noir:#353535;
 
 .img_bg4
 {
-    background-image: url("../../restaurants/img4.jpg");
-    background-position: center;
-    background-size: cover;
+    background:{
+        image: url("../../restaurants/img4.jpg");
+        position: center;
+        size: cover;}
     height: 231px; 
     width: 100vw;
     border-radius: none;
@@ -567,36 +571,40 @@ ul
 
 #img1
 {
-    background-image: url("../../restaurants/img1.jpg");
-    background-position: center;
-    background-size: cover;
+    background:{
+        image: url("../../restaurants/img1.jpg");
+        position: center;
+        size: cover;
+    }
     height: 185px;
     border-radius: 15px 15px 0px 0px;
 }
 
 #img2
 {
-    background-image: url("../../restaurants/img2.jpg");
-    background-position: center;
-    background-size: cover;
+    background:{
+        image: url("../../restaurants/img2.jpg");
+        position: center;
+        size: cover;}
     height: 185px;
     border-radius: 15px 15px 0px 0px;
 }
 
 #img3
 {
-    background-image: url("../../restaurants/img3.jpg");
-    background-position: center;
-    background-size: cover;
+    background:{
+        image: url("../../restaurants/img3.jpg");
+        position: center;
+        size: cover;}
     height: 185px;
     border-radius: 15px 15px 0px 0px;
 }
 
 #img4
 {
-    background-image: url("../../restaurants/img4.jpg");
-    background-position: center;
-    background-size: cover;
+    background:{image: url("../../restaurants/img4.jpg");
+        position: center;
+        size: cover;}
     height: 185px;
     border-radius: 15px 15px 0px 0px;
 }
@@ -624,7 +632,7 @@ a
     font-size: 28px;
     z-index: 1;
     left: 19vw;
-    
+
     @media (min-width: 540px)
     {
         left:5vw;
@@ -647,7 +655,7 @@ a
         color:$violet;
         transition: color 0.5s ease;
     }
-    
+
     @media (min-width: 540px)
     {
         left:5vw;
