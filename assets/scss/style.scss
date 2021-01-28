@@ -51,12 +51,10 @@ $noir:#353535;
     height: 45px;
     padding-top: 20px;
     text-align: center;
-}
 
-@media (min-width: 540px)
-{
-    .logo_main
+    @media (min-width: 540px)
     {
+
         box-shadow:none;
     }
 }
@@ -65,45 +63,33 @@ $noir:#353535;
 {
     width: 41%;
     margin-bottom: -18px;
-}
 
-@media (min-width: 585px)
-{
-    .logo
+    @media (min-width: 585px)
+
     {
         width: 36%;
     }
-}
 
-@media (min-width:639px)
-{
-    .logo
+    @media (min-width:639px)
+
     {
         width: 31%;
     }
-}
 
-@media (min-width:760px)
-{
-    .logo
+    @media (min-width:760px)
+
     {
         width: 27%;
     }
 
-}
+    @media (min-width:910px)
 
-@media (min-width:910px)
-{
-    .logo
     {
         width: 23%;
     }
 
-}
+    @media (min-width:1039px)
 
-@media (min-width:1039px)
-{
-    .logo
     {
         width: 19%;
     }
@@ -151,11 +137,9 @@ $noir:#353535;
 .modebig
 {
     display:block;
-}
 
-@media (min-width:740px)
-{
-    .modebig
+    @media (min-width:740px)
+
     {
         display: flex;
         flex-direction: row;
@@ -232,11 +216,9 @@ $noir:#353535;
     border-top-right-radius: 30px;
     z-index: 10;
     background-color: #f6f6f6;
-}
 
-@media (min-width:540px)
-{
-    .menu_food
+    @media (min-width:540px)
+
     {
         margin-top: 0;
     }
@@ -250,11 +232,8 @@ $noir:#353535;
     display: flex;
     justify-content: left;
 
-}
+    @media (min-width:540px)
 
-@media (min-width:540px)
-{
-    .titre_menu_box
     {
         justify-content: center; 
     }
@@ -296,11 +275,9 @@ $noir:#353535;
     display: block; 
     margin: auto;
     width: 94%;
-}
 
-@media (min-width:540px)
-{
-    .entrées, .plats, .desserts
+    @media (min-width:540px)
+
     {
         width: 50%;
     }
@@ -329,27 +306,21 @@ hr
     position: relative;
     right: 43%;
     bottom: 16px;
-}
 
-@media (min-width: 665px)
-{
-    hr 
+    @media (min-width: 665px)
+
     {
         right: 44%;
     }
-}
 
-@media (min-width: 1000px)
-{
-    hr 
+    @media (min-width: 1000px)
+
     {
         right: 46%;
     }
-}
 
-@media (min-width: 1250px)
-{
-    hr 
+    @media (min-width: 1250px)
+
     {
         right: 47%;
     }
@@ -479,27 +450,20 @@ ul
     top:45px;
     left:4%;
 
-}
+    @media (min-width: 540px)
 
-@media (min-width: 540px)
-{
-    .number
     {
         left: 21%;
     }
-}
 
-@media (min-width: 645px)
-{
-    .number
+    @media (min-width: 645px)
+
     {
         left: 23%;
     }
-}
 
-@media (min-width: 740px)
-{
-    .number
+    @media (min-width: 740px)
+
     {
         left: 0; 
     }
@@ -567,11 +531,9 @@ ul
 {
     margin-top: 45px;
     margin-left: 5%;
-}
 
-@media (min-width: 540px)
-{
-    #main h2
+    @media (min-width: 540px)
+
     {
         margin-left: 23%;
     }
@@ -595,15 +557,14 @@ ul
     margin:auto;
     margin-bottom: 4%;
     width: 90%;
-}
 
-@media (min-width: 540px)
-{
-    .one, .two, .three, .four
+    @media (min-width: 540px)
+
     {
         width: 53%;
     }
 }
+
 #img1
 {
     background-image: url("../../restaurants/img1.jpg");
@@ -663,6 +624,11 @@ a
     font-size: 28px;
     z-index: 1;
     left: 19vw;
+    
+    @media (min-width: 540px)
+    {
+        left:5vw;
+    }
 }
 
 
@@ -680,6 +646,11 @@ a
     {
         color:$violet;
         transition: color 0.5s ease;
+    }
+    
+    @media (min-width: 540px)
+    {
+        left:5vw;
     }
 }
 
@@ -715,11 +686,9 @@ h3
     text-align: center;
     margin-top: 12px;
     margin-bottom: 19px;
-}
 
-@media (min-width: 540px)
-{
-    .btncommander
+    @media (min-width: 540px)
+
     {
         width: 24%;
     }
@@ -760,19 +729,15 @@ footer p
     color:white;
     font-family: 'Shrikhand', cursive;
     margin-left: 0;
-}
 
-@media (min-width:540px)
-{
-    footer p
+    @media (min-width:540px)
+
     {
         margin-left: 42%;
     }
-}
 
-@media (min-width:1022px) 
-{
-    footer p
+    @media (min-width:1022px) 
+
     {
         margin-left: 47%;
     }
@@ -797,11 +762,9 @@ footer .fa-utensils, footer .fa-hands-helping
 {
     color: white;
     margin-right: 5%;
-}
 
-@media (min-width:540px)
-{
-    footer .fa-utensils,footer .fa-hands-helping
+    @media (min-width:540px)
+
     {
         margin-right: 1%;
     }
@@ -811,11 +774,9 @@ footer .fa-utensils, footer .fa-hands-helping
 .nav_footer
 {
     text-align: left;
-}
 
-@media (min-width:540px)
-{
-    .nav_footer
+    @media (min-width:540px)
+
     {
         text-align: center;
     }

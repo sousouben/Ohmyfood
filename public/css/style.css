@@ -37,17 +37,16 @@ h6 {
   padding-top: 20px;
   text-align: center;
 }
-
 @media (min-width: 540px) {
   .logo_main {
     box-shadow: none;
   }
 }
+
 .logo {
   width: 41%;
   margin-bottom: -18px;
 }
-
 @media (min-width: 585px) {
   .logo {
     width: 36%;
@@ -73,6 +72,7 @@ h6 {
     width: 19%;
   }
 }
+
 .local_text {
   font-weight: 500;
   font-size: 85%;
@@ -109,7 +109,6 @@ h6 {
 .modebig {
   display: block;
 }
-
 @media (min-width: 740px) {
   .modebig {
     display: flex;
@@ -119,6 +118,7 @@ h6 {
     MARGIN-RIGHT: 2%;
   }
 }
+
 #cart {
   background-color: #f6f6f6;
   padding-bottom: 90px;
@@ -176,12 +176,12 @@ h6 {
   z-index: 10;
   background-color: #f6f6f6;
 }
-
 @media (min-width: 540px) {
   .menu_food {
     margin-top: 0;
   }
 }
+
 .titre_menu_box {
   font-family: "Shrikhand", cursive;
   font-size: 24px;
@@ -189,12 +189,12 @@ h6 {
   display: flex;
   justify-content: left;
 }
-
 @media (min-width: 540px) {
   .titre_menu_box {
     justify-content: center;
   }
 }
+
 .titre_menu_box h1 {
   margin-bottom: 1px;
   font-size: 21px;
@@ -223,12 +223,12 @@ h6 {
   margin: auto;
   width: 94%;
 }
-
 @media (min-width: 540px) {
   .entrées, .plats, .desserts {
     width: 50%;
   }
 }
+
 .plats, .desserts {
   margin-top: 48px;
 }
@@ -249,7 +249,6 @@ hr {
   right: 43%;
   bottom: 16px;
 }
-
 @media (min-width: 665px) {
   hr {
     right: 44%;
@@ -265,6 +264,7 @@ hr {
     right: 47%;
   }
 }
+
 .entrées_food, .plats_food, .desserts_food {
   border-radius: 15px;
   margin-bottom: 14px;
@@ -360,7 +360,6 @@ ul {
   top: 45px;
   left: 4%;
 }
-
 @media (min-width: 540px) {
   .number {
     left: 21%;
@@ -376,6 +375,7 @@ ul {
     left: 0;
   }
 }
+
 .btn_nom {
   background-color: #f6f6f6;
   padding: 26px 30px;
@@ -419,12 +419,12 @@ ul {
   margin-top: 45px;
   margin-left: 5%;
 }
-
 @media (min-width: 540px) {
   #main h2 {
     margin-left: 23%;
   }
 }
+
 #main {
   display: flex;
   flex-direction: column;
@@ -442,12 +442,12 @@ ul {
   margin-bottom: 4%;
   width: 90%;
 }
-
 @media (min-width: 540px) {
   .one, .two, .three, .four {
     width: 53%;
   }
 }
+
 #img1 {
   background-image: url("../../restaurants/img1.jpg");
   background-position: center;
@@ -500,6 +500,11 @@ a {
   z-index: 1;
   left: 19vw;
 }
+@media (min-width: 540px) {
+  .coeur .far.fa-heart {
+    left: 5vw;
+  }
+}
 
 .coeur .fas.fa-heart {
   position: relative;
@@ -512,6 +517,11 @@ a {
 .coeur .fas.fa-heart:hover {
   color: #9356DC;
   transition: color 0.5s ease;
+}
+@media (min-width: 540px) {
+  .coeur .fas.fa-heart {
+    left: 5vw;
+  }
 }
 
 h3 {
@@ -543,12 +553,12 @@ h3 {
   margin-top: 12px;
   margin-bottom: 19px;
 }
-
 @media (min-width: 540px) {
   .btncommander {
     width: 24%;
   }
 }
+
 .button1 {
   border-radius: 25px;
   cursor: pointer;
@@ -580,7 +590,6 @@ footer p {
   font-family: "Shrikhand", cursive;
   margin-left: 0;
 }
-
 @media (min-width: 540px) {
   footer p {
     margin-left: 42%;
@@ -591,6 +600,7 @@ footer p {
     margin-left: 47%;
   }
 }
+
 .container-footer {
   margin: 0 auto;
 }
@@ -607,16 +617,15 @@ footer .fa-utensils, footer .fa-hands-helping {
   color: white;
   margin-right: 5%;
 }
-
 @media (min-width: 540px) {
   footer .fa-utensils, footer .fa-hands-helping {
     margin-right: 1%;
   }
 }
+
 .nav_footer {
   text-align: left;
 }
-
 @media (min-width: 540px) {
   .nav_footer {
     text-align: center;
