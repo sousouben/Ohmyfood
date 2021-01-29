@@ -255,6 +255,7 @@ h6 {
   display: block;
   margin: auto;
   width: 94%;
+  animation: slidebottom 10s;
 }
 @media (min-width: 540px) {
   .entrées, .plats, .desserts {
@@ -262,6 +263,14 @@ h6 {
   }
 }
 
+@keyframes slidebottom {
+  0% {
+    transform: translateY(200px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
 .plats, .desserts {
   margin-top: 48px;
 }
@@ -346,10 +355,7 @@ hr {
   width: 0;
   padding: 24px 0;
   text-align: center;
-  animation-duration: 5s;
-  animation-name: glissement;
-  animation-fill-mode: backwards;
-  animation-delay: 1s;
+  animation: 2s glissement;
 }
 
 @keyframes glissement {
@@ -613,6 +619,10 @@ h3 {
   margin: auto;
   margin-top: 50px;
   text-align: center;
+}
+.button1:hover {
+  transition-duration: 1s;
+  opacity: 0.75;
 }
 
 .btncommander1 {

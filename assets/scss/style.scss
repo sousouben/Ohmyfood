@@ -39,7 +39,7 @@ $noir:#353535;
     z-index: 2500;
     animation: spinner 3s;
     animation-fill-mode: forwards;
-    
+
     & div
     {
         margin:auto;
@@ -165,11 +165,11 @@ $noir:#353535;
     text-align: center;
     margin-top: 12px;
     margin-bottom: 19px;
-    
+
     &:hover{
         transition-duration: 1s;
         opacity: 0.75;
-           
+
     }
 
 }
@@ -301,7 +301,7 @@ $noir:#353535;
     -webkit-background-clip: text;
     text-shadow:0 0 2px black; 
     background-color:white;
-    
+
     &:hover
     {
         background-color: $violet;
@@ -319,6 +319,7 @@ $noir:#353535;
     display: block; 
     margin: auto;
     width: 94%;
+    animation: slidebottom 10s;
 
     @media (min-width:540px)
 
@@ -326,6 +327,22 @@ $noir:#353535;
         width: 50%;
     }
 }
+
+@keyframes slidebottom 
+{
+    0%
+    { 
+        transform: translateY(200px);
+
+    }
+    100%
+    {
+        transform: translateY(0);
+
+
+    }
+}
+
 
 .plats, .desserts
 {
@@ -432,22 +449,23 @@ hr
     width:0; //*WIDTH 16%*//
     padding:24px 0;
     text-align: center;
-    animation-duration: 5s;
-  animation-name: glissement;
-  animation-fill-mode: backwards;
-animation-delay: 1s;
+    animation: 2s glissement;
+
+
 }
 
 @keyframes glissement
 {
     0% { 
         width: 0;
+
     }
-    
+
     100%{
         width: 16%;
+
     }
-    
+
 
 }
 .fas.fa-check-circle.fa-lg
@@ -694,7 +712,7 @@ a
     text-shadow:0 0 2px black; 
     background-color:white;
     top:26%;
-    
+
     &:hover
     {
         background-color: $violet;
@@ -741,7 +759,7 @@ h3
     text-align: center;
     margin-top: 12px;
     margin-bottom: 19px;
-    
+
     &:hover{
         transition-duration: 1s;
         opacity: 0.75;
@@ -765,6 +783,10 @@ h3
     margin:auto;
     margin-top: 50px;
     text-align: center;
+    &:hover{
+        transition-duration: 1s;
+        opacity: 0.75;
+    }
 }
 
 .btncommander1
@@ -772,6 +794,7 @@ h3
     color:white;
     text-decoration: none;
     text-align: center;
+    
 }
 /*footer*/
 
