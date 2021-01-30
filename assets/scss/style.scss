@@ -400,6 +400,7 @@ hr
     padding-left:12px;
     height: 67px;
     overflow: hidden;
+    
 }
 
 .entrées_food h4, .plats_food h4 ,.desserts_food h4
@@ -418,14 +419,14 @@ hr
 
 }
 
-.text
+.item_text
 {
     margin:0px 0px 14px 0px;
     width: 85%;
     font-size: 82%;
 }
 
-.prix
+.item_prix
 {
     position:relative;
     width: 15%;
@@ -441,7 +442,7 @@ hr
 
 }
 
-.barre
+.item_barre
 {
 
     background-color:$vert;
