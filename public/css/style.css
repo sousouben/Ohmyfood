@@ -331,6 +331,13 @@ hr {
 .entrées_food:hover, .desserts_food:hover, .plats_food:hover {
   overflow: hidden;
 }
+.entrées_food:hover .euros, .desserts_food:hover .euros, .plats_food:hover .euros {
+  animation: boxReverse 400ms linear both;
+}
+.entrées_food:hover .item_barre, .desserts_food:hover .item_barre, .plats_food:hover .item_barre {
+  animation: boxReverse 400ms linear both;
+  width: 0;
+}
 
 .entrées_food h4, .plats_food h4, .desserts_food h4 {
   margin-bottom: 0;
@@ -351,9 +358,17 @@ hr {
 
 .item_prix {
   position: relative;
-  width: 15%;
+  width: 16%;
 }
 
+@keyframes boxReverse {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(16%);
+  }
+}
 .euros {
   position: relative;
   display: flex;
@@ -361,30 +376,15 @@ hr {
   top: 44%;
 }
 
-.item_barre:hover {
+.item_barre {
   background-color: #99E2D0;
   border-radius: 0 15px 15px 0;
-  width: 0;
+  width: 16%;
   padding: 24px 0;
   text-align: center;
   color: white;
-  animation-duration: 4s;
-  animation-name: glissement;
-  animation-direction: alternate-reverse;
-  animation-fill-mode: both;
-  animation-timing-function: linear;
 }
 
-@keyframes glissement {
-  0% {
-    transform: translateX(0);
-    width: 0;
-  }
-  100% {
-    transform: translateX(16%);
-    width: 16%;
-  }
-}
 .fas.fa-check-circle.fa-lg {
   color: white;
 }

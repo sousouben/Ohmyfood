@@ -418,7 +418,14 @@ hr
     
     &:hover{
     overflow: hidden;
-        
+        .euros{
+            animation: boxReverse 400ms linear both;}
+        .item_barre{
+            animation: boxReverse 400ms linear both;
+            width: 0;
+        }
+    
+            
     }
     
 }
@@ -462,50 +469,42 @@ hr
 .item_prix
 {
     position:relative;
-    width: 15%;
+    width: 16%;
 
 }
 
+@keyframes boxReverse
+{
+    0% {
+        transform: translateX(0);}
+        100% {
+    transform: translateX(16%);
+}
+    
+}
 .euros
 {
     position:relative;
     display:flex;
     flex-direction: row;
     top:44%;
-
+   
+    
+    
 }
 
-.item_barre:hover
+.item_barre
 {
 
     background-color:$vert;
     border-radius: 0 15px 15px 0;
-    width:0; //*WIDTH 16%*//
+    width:16%; //*WIDTH 16%*//
     padding:24px 0;
     text-align: center;
     color: white;
-    animation-duration: 4s;
-      animation-name: glissement;
-    animation-direction:alternate-reverse;
-    animation-fill-mode: both;
-    animation-timing-function:linear;
     
 }
 
-@keyframes glissement
-{
-    
-    0% { transform: translateX(0);
-        width: 0;
-
-    }
-    
-    100%{transform: translateX(16%);
-        width: 16%;
-
-    }
-
-}
 
 .fas.fa-check-circle.fa-lg
 {
