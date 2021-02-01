@@ -8,11 +8,14 @@ body
     font-size:1rem;
 }
 
+/*titre*/
+
 h6 
 {
     visibility: collapse;
     display: none;
 }
+
 
 //* variables couleurs*//
 $violet:#9356DC;     
@@ -136,7 +139,8 @@ $noir:#353535;
 }
 
 
-.local{
+.local
+{
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -149,6 +153,7 @@ $noir:#353535;
 {
     margin-right: 3%;
 }
+//* bouton index*//
 
 .button
 {
@@ -157,9 +162,7 @@ $noir:#353535;
     cursor:pointer;
     padding: 14px 12px;
     box-shadow: 0px 5px 5px lightgrey;
-    background: linear-gradient(
-173deg
-, #ff79da 0%, #d66cdb 39%, #ab5edc 85%, #9b59dc 100%);
+    background: linear-gradient(173deg, #ff79da 0%, #d66cdb 39%, #ab5edc 85%, #9b59dc 100%);
     width: 54%;
     width:auto;
     margin: auto;
@@ -176,6 +179,8 @@ $noir:#353535;
     }
 
 }
+
+//* fonctionnement*//
 
 .modebig
 {
@@ -203,9 +208,9 @@ $noir:#353535;
 .img_bg1
 {
     background:{
-        image: url("../../restaurants/img1.jpg");
-        position: center;
-        size: cover;}
+    image: url("../../restaurants/img1.jpg");
+    position: center;
+    size: cover;}
     height: 231px; 
     width: 100vw;
     border-radius: none;
@@ -214,9 +219,9 @@ $noir:#353535;
 .img_bg2
 {
     background:{
-        image: url("../../restaurants/img2.jpg");
-        position: center;
-        size: cover;}
+    image: url("../../restaurants/img2.jpg");
+    position: center;
+    size: cover;}
     height: 231px; 
     width: 100vw;
     border-radius: none;
@@ -225,9 +230,9 @@ $noir:#353535;
 .img_bg3
 {
     background:{
-        image: url("../../restaurants/img3.jpg");
-        position: center;
-        size: cover;}
+    image: url("../../restaurants/img3.jpg");
+    position: center;
+    size: cover;}
     height: 231px;
     width: 100vw;
     border-radius: none;
@@ -253,6 +258,31 @@ $noir:#353535;
         border-radius: 15px 15px;
     }
 }
+
+//* coeur index*//
+.card__icon .fas.fa-heart
+{
+    position:relative;
+    top:19px;
+    font-size: 21px;
+    z-index: 1;
+    color: white;
+    transition: background 0.5s;
+    background-clip: text;
+    -webkit-background-clip: text;
+    text-shadow:0 0 2px black; 
+    background-color:white;
+
+    &:hover
+    {
+        background-color: #d66cdb;
+        color:transparent;
+        text-shadow: none;
+        transition:all 1s;
+    }
+}
+
+//*menu carte*//
 
 .menu_food
 {
@@ -292,38 +322,13 @@ $noir:#353535;
     font-size: 21px;
 }
 
-.card__icon .fas.fa-heart
-{
-    position:relative;
-    top:19px;
-    font-size: 21px;
-    z-index: 1;
-    color: white;
-    transition: background 0.5s;
-    background-clip: text;
-    -webkit-background-clip: text;
-    text-shadow:0 0 2px black; 
-    background-color:white;
-
-    &:hover
-    {
-        background-color: #d66cdb;
-        color:transparent;
-        text-shadow: none;
-        transition:all 1s;
-    }
-}
-
-//*menu carte*//
-
-
 .entrées 
 {
     display: block; 
     margin: auto;
     width: 94%;
-     animation: slidefood 5s;
-    
+    animation: slidefood 5s;
+
 
     @media (min-width:540px)
 
@@ -335,14 +340,14 @@ $noir:#353535;
 .plats
 {
     @extend.entrées;
-         animation: slidefood 10s;
+    animation: slidefood 10s;
 }
 
 .desserts
 {
     @extend.entrées;
-     animation: slidefood 15s;
-    
+    animation: slidefood 15s;
+
 }
 
 @keyframes slidefood
@@ -417,19 +422,16 @@ hr
     box-shadow: 0px 4px 6px rgba(0,0,0,0.10);
     padding-left:12px;
     height: 67px;
-    
-    &:hover{
+
+    &:hover
+    {
     overflow: hidden;
-        .euros{
-            animation: boxReverse 400ms linear ;}
-        .item_barre{
-            animation: boxReverse 400ms linear;
-            width: 0;
-        }
-    
-            
+    .euros{
+        animation: boxReverse 400ms linear ;}
+    .item_barre{
+        animation: boxReverse 400ms linear;
+        width: 0;}
     }
-    
 }
 
 .plats_food
@@ -439,11 +441,8 @@ hr
 
 .desserts_food
 {
-   @extend.entrées_food;
+    @extend.entrées_food;
 }
-
-
-
 
 .entrées_food h4, .plats_food h4 ,.desserts_food h4
 {
@@ -452,7 +451,6 @@ hr
     white-space: nowrap;
     text-overflow: ellipsis;
 }
-
 
 .entrées_food p, .plats_food p ,.desserts_food p
 {
@@ -484,10 +482,10 @@ hr
 {
     0% {
         transform: translateX(0);}
-        100% {
-    transform: translateX(16%);
-}
-    
+    100% {
+        transform: translateX(16%);
+    }
+
 }
 .euros
 {
@@ -495,9 +493,9 @@ hr
     display:flex;
     flex-direction: row;
     top:44%;
-   animation: boxReverse 400ms linear both;
-    
-    
+    animation: boxReverse 400ms linear both;
+
+
 }
 
 .item_barre
@@ -516,11 +514,12 @@ hr
 .fas.fa-check-circle.fa-lg
 {
     color:white;
+
     &:hover{
-       animation: moveCircle 1.25s;
+        animation: moveCircle 1.25s;
     }
-   
-        
+
+
 }
 
 @keyframes moveCircle
@@ -716,7 +715,8 @@ ul
     background:{
         image: url("../../restaurants/img2.jpg");
         position: center;
-        size: cover;}
+        size: cover;
+    }
     height: 185px;
     border-radius: 15px 15px 0px 0px;
 }
@@ -726,7 +726,8 @@ ul
     background:{
         image: url("../../restaurants/img3.jpg");
         position: center;
-        size: cover;}
+        size: cover;
+    }
     height: 185px;
     border-radius: 15px 15px 0px 0px;
 }
@@ -735,7 +736,8 @@ ul
 {
     background:{image: url("../../restaurants/img4.jpg");
         position: center;
-        size: cover;}
+        size: cover;
+    }
     height: 185px;
     border-radius: 15px 15px 0px 0px;
 }
@@ -807,16 +809,14 @@ h3
     cursor: pointer;
     padding: 14px 6px;
     box-shadow: 0px 5px 5px lightgrey;
-    background: linear-gradient(
-173deg
-, #ff79da 0%, #d66cdb 39%, #ab5edc 85%, #9b59dc 100%);
+    background: linear-gradient(173deg, #ff79da 0%, #d66cdb 39%, #ab5edc 85%, #9b59dc 100%);
     width: 54%;
     margin: auto;
     text-decoration: none;
     text-align: center;
     margin-top: 12px;
     margin-bottom: 19px;
-    
+
 
     &:hover{
         transition-duration: 1s;
@@ -837,13 +837,12 @@ h3
     cursor: pointer;
     padding: 14px 30px;
     box-shadow: 0px 5px 5px lightgrey;
-    background: linear-gradient(
-173deg
-, #ff79da 0%, #d66cdb 39%, #ab5edc 85%, #9b59dc 100%);
+    background: linear-gradient(173deg, #ff79da 0%, #d66cdb 39%, #ab5edc 85%, #9b59dc 100%);
     width: 26%;
     margin:auto;
     margin-top: 50px;
     text-align: center;
+
     &:hover{
         transition-duration: 1s;
         opacity: 0.75;
@@ -856,7 +855,7 @@ h3
     color:white;
     text-decoration: none;
     text-align: center;
-    
+
 }
 /*footer*/
 
