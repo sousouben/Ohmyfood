@@ -122,9 +122,9 @@ h6 {
   border-radius: 25px;
   color: white;
   cursor: pointer;
-  padding: 14px 6px;
-  box-shadow: inset -2px 12px 20px 8px #FF79DA;
-  background-color: #9356DC;
+  padding: 14px 12px;
+  box-shadow: 0px 5px 5px lightgrey;
+  background: linear-gradient(173deg, #ff79da 0%, #d66cdb 39%, #ab5edc 85%, #9b59dc 100%);
   width: 54%;
   width: auto;
   margin: auto;
@@ -136,6 +136,7 @@ h6 {
 .button:hover {
   transition-duration: 1s;
   opacity: 0.75;
+  box-shadow: 0px 10px 5px lightgrey;
 }
 
 .modebig {
@@ -245,7 +246,7 @@ h6 {
   background-color: white;
 }
 .card__icon .fas.fa-heart:hover {
-  background-color: #9356DC;
+  background-color: #d66cdb;
   color: transparent;
   text-shadow: none;
   transition: all 1s;
@@ -586,7 +587,7 @@ a {
   top: 26%;
 }
 .coeur .fas.fa-heart:hover {
-  background-color: #9356DC;
+  background-color: #d66cdb;
   color: transparent;
   text-shadow: none;
   transition: all 1s;
@@ -617,8 +618,8 @@ h3 {
   color: white;
   cursor: pointer;
   padding: 14px 6px;
-  box-shadow: inset -2px 12px 20px 8px #FF79DA;
-  background-color: #9356DC;
+  box-shadow: 0px 5px 5px lightgrey;
+  background: linear-gradient(173deg, #ff79da 0%, #d66cdb 39%, #ab5edc 85%, #9b59dc 100%);
   width: 54%;
   margin: auto;
   text-decoration: none;
@@ -629,6 +630,7 @@ h3 {
 .btncommander:hover {
   transition-duration: 1s;
   opacity: 0.75;
+  box-shadow: 0px 10px 5px lightgrey;
 }
 @media (min-width: 540px) {
   .btncommander {
@@ -640,8 +642,8 @@ h3 {
   border-radius: 25px;
   cursor: pointer;
   padding: 14px 30px;
-  box-shadow: inset -2px 12px 20px 8px #FF79DA;
-  background-color: #9356DC;
+  box-shadow: 0px 5px 5px lightgrey;
+  background: linear-gradient(173deg, #ff79da 0%, #d66cdb 39%, #ab5edc 85%, #9b59dc 100%);
   width: 26%;
   margin: auto;
   margin-top: 50px;
@@ -650,6 +652,7 @@ h3 {
 .button1:hover {
   transition-duration: 1s;
   opacity: 0.75;
+  box-shadow: 0px 10px 5px lightgrey;
 }
 
 .btncommander1 {
