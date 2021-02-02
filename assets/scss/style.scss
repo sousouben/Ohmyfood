@@ -447,6 +447,7 @@ hr
 .entrées_food h4, .plats_food h4 ,.desserts_food h4
 {
     margin-bottom: 0;
+    margin-top: 4%;
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
@@ -463,7 +464,6 @@ hr
 
 .item_text
 {
-    margin:-6px 0px 8px 0px;
     width: 85%;
     font-size:1rem;
     overflow: hidden;
@@ -474,7 +474,7 @@ hr
 .item_prix
 {
     position:relative;
-    width: 16%;
+    width: 15%;
     margin-left: 2%;
 }
 
@@ -503,7 +503,7 @@ hr
 
     background-color:$vert;
     border-radius: 0 15px 15px 0;
-    width:16%; //*WIDTH 16%*//
+    width:15%; 
     padding:24px 0;
     text-align: center;
     color: white;
