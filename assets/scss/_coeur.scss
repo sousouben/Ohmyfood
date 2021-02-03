@@ -1,0 +1,48 @@
+.card__icon .fas.fa-heart
+{
+    position:relative;
+    top:19px;
+    font-size: 21px;
+    z-index: 1;
+    color: white;
+    transition: background 0.5s;
+    background-clip: text;
+    -webkit-background-clip: text;
+    text-shadow:0 0 2px black; 
+    background-color:white;
+
+    &:hover
+    {
+        background-color: #d66cdb;
+        color:transparent;
+        text-shadow: none;
+        transition:all 1s;
+    }
+}
+
+.coeur .fas.fa-heart
+{
+    position: relative;
+    left:19vw;
+    bottom:17px;
+    color: $gris_clair;
+    transition: background 0.5s;
+    background-clip: text;
+    -webkit-background-clip: text;
+    text-shadow:0 0 2px black; 
+    background-color:white;
+    top:26%;
+
+    &:hover
+    {
+        background-color:#d66cdb;
+        color:transparent;
+        text-shadow: none;
+        transition:all 1s;
+    }
+
+    @media (min-width: 540px)
+    {
+        left:5vw;
+    }
+}

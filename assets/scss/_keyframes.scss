@@ -1,0 +1,56 @@
+@keyframes boxReverse
+{
+    0% {
+        transform: translateX(0);}
+    100% {
+        transform: translateX(16%);
+    }
+
+}
+
+@keyframes spinner
+{
+    0% {
+        top:0;
+        opacity: 1;
+
+    }
+    50% {
+        top:0;
+        opacity: 1;
+    }
+    99%{
+        top: 0;
+        opacity: 0;
+    }
+    100%{
+        top: 100%;
+        opacity: 0;
+    }
+
+}
+
+
+@keyframes slidefood
+{
+    0%
+    { 
+        transform: translateY(200px);
+        opacity: 0;
+
+    }
+    100%
+    {
+        transform: translateY(0);
+        opacity: 1;
+
+    }
+}
+
+@keyframes moveCircle
+{
+    100% {
+        transform: rotate(360deg);}
+}
+
+
