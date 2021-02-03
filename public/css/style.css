@@ -341,22 +341,6 @@ hr {
   width: 0;
 }
 
-.entrées_food h4, .plats_food h4, .desserts_food h4 {
-  margin-bottom: 0;
-  margin-top: 4%;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-}
-
-.entrées_food p, .plats_food p, .desserts_food p {
-  margin-bottom: 0;
-  margin-top: 2%;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-}
-
 .item_text {
   width: 85%;
   font-size: 1rem;
@@ -402,6 +386,22 @@ hr {
 }
 .fas.fa-check-circle.fa-lg:hover {
   animation: moveCircle 1.25s;
+}
+
+.entrées_food h4, .plats_food h4, .desserts_food h4 {
+  margin-bottom: 0;
+  margin-top: 4%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.entrées_food p, .plats_food p, .desserts_food p {
+  margin-bottom: 0;
+  margin-top: 2%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
 @keyframes moveCircle {
