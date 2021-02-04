@@ -163,10 +163,6 @@
 .btn_fonction {
   padding-bottom: 36px;
 }
-.btn_fonction .button_degustation, .btn_fonction .button_choix, .btn_fonction .button_composition {
-  display: flex;
-  margin-top: 25px;
-}
 
 .number {
   border-radius: 50%;
@@ -174,9 +170,24 @@
   padding: 4px 9px;
   height: 20px;
   color: white;
-  margin-left: 0.5rem;
-  margin-bottom: auto;
-  margin-top: auto;
+  position: relative;
+  top: 45px;
+  left: 4%;
+}
+@media (min-width: 463px) {
+  .number {
+    left: 6%;
+  }
+}
+@media (min-width: 645px) {
+  .number {
+    left: 7%;
+  }
+}
+@media (min-width: 740px) {
+  .number {
+    left: 0;
+  }
 }
 
 .btn_nom {
@@ -191,7 +202,6 @@
   flex-direction: row;
   justify-content: space-around;
   font-weight: bold;
-  margin-left: -0.5rem;
 }
 .btn_nom:hover {
   background-color: #f5edff;
