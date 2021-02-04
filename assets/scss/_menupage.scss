@@ -107,7 +107,7 @@
     font-size: 21px;
 }
 
-.entrées 
+.entrees 
 {
     display: block; 
     margin: auto;
@@ -124,13 +124,13 @@
 
 .plats
 {
-    @extend.entrées;
+    @extend.entrees;
     animation: slidefood 10s;
 }
 
 .desserts
 {
-    @extend.entrées;
+    @extend.entrees;
     animation: slidefood 15s;
 
 }
@@ -140,7 +140,7 @@
     margin-top: 48px;
 }
 
-.entrées h3, .plats h3, .desserts h3
+.entrees h3, .plats h3, .desserts h3
 {
     font-weight: 400;
     font-size: 15px;
@@ -178,7 +178,7 @@ hr
     }
 }
 
-.entrées_food
+.entrees_food
 {
     border-radius: 15px;
     margin-bottom: 14px;
@@ -188,7 +188,7 @@ hr
     justify-content:  space-between;
     box-shadow: 0px 4px 6px rgba(0,0,0,0.10);
     padding-left:12px;
-    height: 67px;
+    height: 87px;
 
     &:hover
     {
@@ -211,6 +211,8 @@ hr
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
+    display: flex;
+    flex-direction: column;
 }
 
 .item_prix
@@ -218,6 +220,8 @@ hr
     position:relative;
     width: 15%;
     margin-left: 2%;
+    
+    
 }
 
 .euros
@@ -226,6 +230,7 @@ hr
     display:flex;
     flex-direction: row;
     top:44%;
+    
     
 
 }
@@ -241,37 +246,39 @@ hr
     overflow: hidden;
     color: white;
    transition:all 0.5s ease;
+    display: flex;
 }
 
 .fas.fa-check-circle.fa-lg
 {
     color:white;
+    margin: auto;
 
    }
 
 .plats_food
 {
-    @extend.entrées_food;
+    @extend.entrees_food;
 }
 
 .desserts_food
 {
-    @extend.entrées_food;
+    @extend.entrees_food;
 }
 
-.entrées_food h4, .plats_food h4 ,.desserts_food h4
+.entrees_food h4, .plats_food h4 ,.desserts_food h4
 {
     margin-bottom: 0;
-    margin-top: 4%;
+    margin-top: auto;
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
 }
 
-.entrées_food p, .plats_food p ,.desserts_food p
+.entrees_food p, .plats_food p ,.desserts_food p
 {
-    margin-bottom: 0;
-    margin-top: 2%;
+    margin-bottom: auto;
+    margin-top: 1rem;
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;

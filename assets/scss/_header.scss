@@ -19,7 +19,7 @@
 
 .logo
 {
-    width: 41%;
+    width: 50%;
     margin-bottom: -18px;
 
     @media (min-width: 585px)
@@ -56,8 +56,10 @@
 .local_text
 {
     font-weight: 500;
-    font-size: 85%;
-    margin-left: 2%;
+    font-size: 100%;
+    border: none;
+    background: none;
+    text-align: center;
 }
 
 
@@ -71,8 +73,5 @@
 
 }
 
-.local .fas 
-{
-    margin-right: 3%;
-}
+
 
