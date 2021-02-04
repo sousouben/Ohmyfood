@@ -1,0 +1,285 @@
+.logo_fleche .fas //*menu*//
+{
+    position: absolute;
+    top: 28px;
+    left: 21px;
+}
+
+//*article cart*//
+
+#cart
+{
+    background-color: #f6f6f6;
+    padding-bottom: 90px; 
+}
+
+.img_bg1
+{
+    background:{
+    image: url("../../restaurants/img1.jpg");
+    position: center;
+    size: cover;}
+    height: 231px; 
+    width: 100vw;
+    border-radius: none;
+}
+
+.img_bg2
+{
+    background:{
+    image: url("../../restaurants/img2.jpg");
+    position: center;
+    size: cover;}
+    height: 231px; 
+    width: 100vw;
+    border-radius: none;
+}
+
+.img_bg3
+{
+    background:{
+    image: url("../../restaurants/img3.jpg");
+    position: center;
+    size: cover;}
+    height: 231px;
+    width: 100vw;
+    border-radius: none;
+}
+
+.img_bg4
+{
+    background:{
+        image: url("../../restaurants/img4.jpg");
+        position: center;
+        size: cover;}
+    height: 231px; 
+    width: 100vw;
+    border-radius: none;
+}
+
+@media (min-width:540px)
+{
+    .img_bg1, .img_bg2, .img_bg3, .img_bg4
+    {
+        width: 51%;
+        margin: auto;
+        border-radius: 15px 15px;
+    }
+}
+
+//*menu carte*//
+
+.menu_food
+{
+    box-sizing: border-box;
+    padding: 20px 25px;
+    margin-top: -36px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    z-index: 10;
+    background-color: #f6f6f6;
+
+    @media (min-width:540px)
+
+    {
+        margin-top: 0;
+    }
+}
+
+.titre_menu_box
+{
+    font-family: 'Shrikhand', cursive;
+    font-size: 24px;
+    letter-spacing: 1px;
+    display: flex;
+    justify-content: left;
+
+    @media (min-width:540px)
+
+    {
+        justify-content: center; 
+    }
+}
+
+.titre_menu_box h1
+{
+    margin-bottom: 1px;
+    font-size: 21px;
+}
+
+.entrees 
+{
+    display: block; 
+    margin: auto;
+    width: 94%;
+    animation: slidefood 5s;
+
+
+    @media (min-width:540px)
+
+    {
+        width: 50%;
+    }
+}
+
+.plats
+{
+    @extend.entrees;
+    animation: slidefood 10s;
+}
+
+.desserts
+{
+    @extend.entrees;
+    animation: slidefood 15s;
+
+}
+
+.plats, .desserts
+{
+    margin-top: 48px;
+}
+
+.entrees h3, .plats h3, .desserts h3
+{
+    font-weight: 400;
+    font-size: 15px;
+    margin-bottom: 23px;
+
+}
+
+hr
+{
+    margin-bottom: 14px;
+    width: 40px;
+    height: 4px;
+    border-style: none;
+    background-color: $vert;
+    position: relative;
+    right: 43%;
+    bottom: 16px;
+
+    @media (min-width: 665px)
+
+    {
+        right: 44%;
+    }
+
+    @media (min-width: 1000px)
+
+    {
+        right: 46%;
+    }
+
+    @media (min-width: 1250px)
+
+    {
+        right: 47%;
+    }
+}
+
+.entrees_food
+{
+    border-radius: 15px;
+    margin-bottom: 14px;
+    background-color: white;
+    display: flex;
+    flex-direction:row;
+    justify-content:  space-between;
+    box-shadow: 0px 4px 6px rgba(0,0,0,0.10);
+    padding-left:12px;
+    height: 87px;
+
+    &:hover
+    {
+    overflow: hidden;
+    
+    .item_barre{
+        width: 20%;
+   transition:all 0.5s ease;
+                }
+        .fas.fa-check-circle.fa-lg{
+             animation: moveCircle 1.25s;
+        }
+    }
+}
+
+.item_text
+{
+    width: 85%;
+    font-size:1rem;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    display: flex;
+    flex-direction: column;
+}
+
+.item_prix
+{
+    position:relative;
+    width: 15%;
+    margin-left: 2%;
+    
+    
+}
+
+.euros
+{
+    position:relative;
+    display:flex;
+    flex-direction: row;
+    top:44%;
+    
+    
+
+}
+
+.item_barre
+{
+
+    background-color:$vert;
+    border-radius: 0 15px 15px 0;
+    width:0; 
+    padding:24px 0;
+    text-align: center;
+    overflow: hidden;
+    color: white;
+   transition:all 0.5s ease;
+    display: flex;
+}
+
+.fas.fa-check-circle.fa-lg
+{
+    color:white;
+    margin: auto;
+
+   }
+
+.plats_food
+{
+    @extend.entrees_food;
+}
+
+.desserts_food
+{
+    @extend.entrees_food;
+}
+
+.entrees_food h4, .plats_food h4 ,.desserts_food h4
+{
+    margin-bottom: 0;
+    margin-top: auto;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.entrees_food p, .plats_food p ,.desserts_food p
+{
+    margin-bottom: auto;
+    margin-top: 1rem;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
