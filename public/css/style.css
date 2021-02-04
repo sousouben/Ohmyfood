@@ -61,14 +61,6 @@
   margin-right: 3%;
 }
 
-@keyframes boxReverse {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(16%);
-  }
-}
 @keyframes spinner {
   0% {
     top: 0;
@@ -444,12 +436,12 @@ hr {
 .entrées_food:hover, .desserts_food:hover, .plats_food:hover {
   overflow: hidden;
 }
-.entrées_food:hover .euros, .desserts_food:hover .euros, .plats_food:hover .euros {
-  animation: boxReverse 400ms linear;
-}
 .entrées_food:hover .item_barre, .desserts_food:hover .item_barre, .plats_food:hover .item_barre {
-  animation: boxReverse 400ms linear;
-  width: 0;
+  width: 20%;
+  transition: all 0.5s ease;
+}
+.entrées_food:hover .fas.fa-check-circle.fa-lg, .desserts_food:hover .fas.fa-check-circle.fa-lg, .plats_food:hover .fas.fa-check-circle.fa-lg {
+  animation: moveCircle 1.25s;
 }
 
 .item_text {
@@ -471,24 +463,21 @@ hr {
   display: flex;
   flex-direction: row;
   top: 44%;
-  animation: boxReverse 400ms linear both;
 }
 
 .item_barre {
   background-color: #99E2D0;
   border-radius: 0 15px 15px 0;
-  width: 15%;
+  width: 0;
   padding: 24px 0;
   text-align: center;
+  overflow: hidden;
   color: white;
-  animation: boxReverse 400ms linear both;
+  transition: all 0.5s ease;
 }
 
 .fas.fa-check-circle.fa-lg {
   color: white;
-}
-.fas.fa-check-circle.fa-lg:hover {
-  animation: moveCircle 1.25s;
 }
 
 .entrées_food h4, .plats_food h4, .desserts_food h4 {
@@ -595,19 +584,6 @@ h6 {
   margin: auto;
 }
 
-.modebig {
-  display: block;
-}
-@media (min-width: 740px) {
-  .modebig {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    margin-left: 2%;
-    MARGIN-RIGHT: 2%;
-  }
-}
-
 /*article class="restaurant"*/
 .restaurant {
   background-color: #f6f6f6;
@@ -624,6 +600,19 @@ h6 {
 .restaurant p {
   text-align: center;
   padding: 0 1%;
+}
+
+.modebig {
+  display: block;
+}
+@media (min-width: 740px) {
+  .modebig {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-left: 2%;
+    MARGIN-RIGHT: 2%;
+  }
 }
 
 /*article class="btn_fonction"*/

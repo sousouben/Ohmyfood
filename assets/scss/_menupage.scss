@@ -193,11 +193,14 @@ hr
     &:hover
     {
     overflow: hidden;
-    .euros{
-        animation: boxReverse 400ms linear ;}
+    
     .item_barre{
-        animation: boxReverse 400ms linear;
-        width: 0;}
+        width: 20%;
+   transition:all 0.5s ease;
+                }
+        .fas.fa-check-circle.fa-lg{
+             animation: moveCircle 1.25s;
+        }
     }
 }
 
@@ -223,7 +226,7 @@ hr
     display:flex;
     flex-direction: row;
     top:44%;
-    animation: boxReverse 400ms linear both;
+    
 
 }
 
@@ -232,21 +235,19 @@ hr
 
     background-color:$vert;
     border-radius: 0 15px 15px 0;
-    width:15%; 
+    width:0; 
     padding:24px 0;
     text-align: center;
+    overflow: hidden;
     color: white;
-    animation: boxReverse 400ms linear both;
+   transition:all 0.5s ease;
 }
 
 .fas.fa-check-circle.fa-lg
 {
     color:white;
 
-    &:hover{
-        animation: moveCircle 1.25s;
-    }
-}
+   }
 
 .plats_food
 {
