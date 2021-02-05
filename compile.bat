@@ -1,0 +1,1 @@
+dart-sass\sass assets/scss:public/css --style=compressed --no-source-map
