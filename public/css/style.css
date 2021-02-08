@@ -88,6 +88,14 @@
   }
 }
 
+.plats {
+  animation: slidefood 10s;
+}
+
+.desserts {
+  animation: slidefood 15s;
+}
+
 .entrees_food, .desserts_food, .plats_food {
   border-radius: 15px;
   margin-bottom: 14px;
@@ -415,14 +423,6 @@
 .titre_menu_box h1 {
   margin-bottom: 1px;
   font-size: 21px;
-}
-
-.plats {
-  animation: slidefood 10s;
-}
-
-.desserts {
-  animation: slidefood 15s;
 }
 
 .plats, .desserts {

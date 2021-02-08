@@ -107,20 +107,6 @@
     font-size: 21px;
 }
 
-
-.plats
-{
-    @extend.entrees;
-    animation: slidefood 10s;
-}
-
-.desserts
-{
-    @extend.entrees;
-    animation: slidefood 15s;
-
-}
-
 .plats, .desserts
 {
     margin-top: 48px;
@@ -163,8 +149,6 @@ hr
         right: 47%;
     }
 }
-
-
 
 .item_text
 {

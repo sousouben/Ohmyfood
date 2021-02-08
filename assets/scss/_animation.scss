@@ -34,6 +34,19 @@
     }
 }
 
+.plats
+{
+    @extend.entrees;
+    animation: slidefood 10s;
+}
+
+.desserts
+{
+    @extend.entrees;
+    animation: slidefood 15s;
+
+}
+
 .entrees_food
 {
     border-radius: 15px;
