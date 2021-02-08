@@ -1,4 +1,5 @@
 @import'_header.scss';
+@import'_animation.scss';
 @import'_keyframes.scss';
 @import'_variables.scss';
 @import'_coeur.scss';
@@ -25,27 +26,6 @@ h6
 }
 
 /*loader*/
-
-.loader 
-{
-    width: 100%;
-    height: 100%;
-    top:0;
-    display: flex;
-    justify-content: center;
-    color:$rose ;
-    font-size: 10rem;
-    position: fixed;
-    background-color: white;
-    z-index: 2500;
-    animation: spinner 3s;
-    animation-fill-mode: forwards;
-
-    & div
-    {
-        margin:auto;
-    }
-}
 
 /*article class="restaurant"*/
 
@@ -82,7 +62,7 @@ h6
         flex-direction: row;
         justify-content: space-around;
         margin-left: 2%;
-        MARGIN-RIGHT: 2%;
+        margin-right: 2%;
     }
 }
 

@@ -58,6 +58,58 @@
   background-color: #eaeaea;
 }
 
+.loader {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  color: #FF79DA;
+  font-size: 10rem;
+  position: fixed;
+  background-color: white;
+  z-index: 2500;
+  animation: spinner 3s;
+  animation-fill-mode: forwards;
+}
+.loader div {
+  margin: auto;
+}
+
+.entrees, .desserts, .plats {
+  display: block;
+  margin: auto;
+  width: 94%;
+  animation: slidefood 5s;
+}
+@media (min-width: 540px) {
+  .entrees, .desserts, .plats {
+    width: 50%;
+  }
+}
+
+.entrees_food, .desserts_food, .plats_food {
+  border-radius: 15px;
+  margin-bottom: 14px;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  padding-left: 12px;
+  height: 87px;
+}
+.entrees_food:hover, .desserts_food:hover, .plats_food:hover {
+  overflow: hidden;
+}
+.entrees_food:hover .item_barre, .desserts_food:hover .item_barre, .plats_food:hover .item_barre {
+  width: 20%;
+  transition: all 0.5s ease;
+}
+.entrees_food:hover .fas.fa-check-circle.fa-lg, .desserts_food:hover .fas.fa-check-circle.fa-lg, .plats_food:hover .fas.fa-check-circle.fa-lg {
+  animation: moveCircle 1.25s;
+}
+
 @keyframes spinner {
   0% {
     top: 0;
@@ -365,18 +417,6 @@
   font-size: 21px;
 }
 
-.entrees, .desserts, .plats {
-  display: block;
-  margin: auto;
-  width: 94%;
-  animation: slidefood 5s;
-}
-@media (min-width: 540px) {
-  .entrees, .desserts, .plats {
-    width: 50%;
-  }
-}
-
 .plats {
   animation: slidefood 10s;
 }
@@ -419,28 +459,6 @@ hr {
   hr {
     right: 47%;
   }
-}
-
-.entrees_food, .desserts_food, .plats_food {
-  border-radius: 15px;
-  margin-bottom: 14px;
-  background-color: white;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-  padding-left: 12px;
-  height: 87px;
-}
-.entrees_food:hover, .desserts_food:hover, .plats_food:hover {
-  overflow: hidden;
-}
-.entrees_food:hover .item_barre, .desserts_food:hover .item_barre, .plats_food:hover .item_barre {
-  width: 20%;
-  transition: all 0.5s ease;
-}
-.entrees_food:hover .fas.fa-check-circle.fa-lg, .desserts_food:hover .fas.fa-check-circle.fa-lg, .plats_food:hover .fas.fa-check-circle.fa-lg {
-  animation: moveCircle 1.25s;
 }
 
 .item_text {
@@ -569,24 +587,6 @@ h6 {
 }
 
 /*loader*/
-.loader {
-  width: 100%;
-  height: 100%;
-  top: 0;
-  display: flex;
-  justify-content: center;
-  color: #FF79DA;
-  font-size: 10rem;
-  position: fixed;
-  background-color: white;
-  z-index: 2500;
-  animation: spinner 3s;
-  animation-fill-mode: forwards;
-}
-.loader div {
-  margin: auto;
-}
-
 /*article class="restaurant"*/
 .restaurant {
   background-color: #f6f6f6;
@@ -614,7 +614,7 @@ h6 {
     flex-direction: row;
     justify-content: space-around;
     margin-left: 2%;
-    MARGIN-RIGHT: 2%;
+    margin-right: 2%;
   }
 }
 
