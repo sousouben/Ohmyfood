@@ -84,23 +84,25 @@
     flex-direction: row;
     justify-content: space-around;
     font-weight: bold;
-  
+    
+   .fas
+    {
+        margin-right: 7%;
+        color: #4d4d4d;
+            }  
 
     &:hover
     {
         background-color:#f5edff;  
-
-    }
-    &.fas
-    {
-        margin-right: 7%;
-    }
-
-    &:hover
-    {
         color: $violet;
+        .fas
+        {
+            color: $violet;
+        }
     }
 }
+
+
 
 
 @media (min-width: 740px)
