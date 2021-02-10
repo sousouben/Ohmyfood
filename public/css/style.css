@@ -103,28 +103,6 @@
   animation: slidefood 15s;
 }
 
-.entrees_food, .desserts_food, .plats_food {
-  border-radius: 15px;
-  margin-bottom: 14px;
-  background-color: white;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-  padding-left: 12px;
-  height: 87px;
-}
-.entrees_food:hover, .desserts_food:hover, .plats_food:hover {
-  overflow: hidden;
-}
-.entrees_food:hover .item_barre, .desserts_food:hover .item_barre, .plats_food:hover .item_barre {
-  width: 20%;
-  transition: all 0.5s ease;
-}
-.entrees_food:hover .fas.fa-check-circle.fa-lg, .desserts_food:hover .fas.fa-check-circle.fa-lg, .plats_food:hover .fas.fa-check-circle.fa-lg {
-  animation: moveCircle 1.25s;
-}
-
 @keyframes spinner {
   0% {
     top: 0;
@@ -199,6 +177,40 @@
   .coeur .fas.fa-heart {
     left: 5vw;
   }
+}
+
+.entrees_food, .desserts_food, .plats_food {
+  border-radius: 15px;
+  margin-bottom: 14px;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  padding-left: 12px;
+  height: 87px;
+}
+.entrees_food:hover, .desserts_food:hover, .plats_food:hover {
+  overflow: hidden;
+}
+.entrees_food:hover .item_barre, .desserts_food:hover .item_barre, .plats_food:hover .item_barre {
+  width: 20%;
+  transition: all 0.5s ease;
+}
+.entrees_food:hover .fas.fa-check-circle.fa-lg, .desserts_food:hover .fas.fa-check-circle.fa-lg, .plats_food:hover .fas.fa-check-circle.fa-lg {
+  animation: moveCircle 1.25s;
+}
+
+.item_barre {
+  background-color: #99E2D0;
+  border-radius: 0 15px 15px 0;
+  width: 0;
+  padding: 24px 0;
+  text-align: center;
+  overflow: hidden;
+  color: white;
+  transition: all 0.5s ease;
+  display: flex;
 }
 
 .button {
@@ -489,18 +501,6 @@ hr {
   display: flex;
   flex-direction: row;
   top: 44%;
-}
-
-.item_barre {
-  background-color: #99E2D0;
-  border-radius: 0 15px 15px 0;
-  width: 0;
-  padding: 24px 0;
-  text-align: center;
-  overflow: hidden;
-  color: white;
-  transition: all 0.5s ease;
-  display: flex;
 }
 
 .fas.fa-check-circle.fa-lg {

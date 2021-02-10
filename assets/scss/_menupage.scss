@@ -167,7 +167,6 @@ hr
     width: 15%;
     margin-left: 2%;
     
-    
 }
 
 .euros
@@ -177,23 +176,8 @@ hr
     flex-direction: row;
     top:44%;
     
-    
-
 }
 
-.item_barre
-{
-
-    background-color:$vert;
-    border-radius: 0 15px 15px 0;
-    width:0; 
-    padding:24px 0;
-    text-align: center;
-    overflow: hidden;
-    color: white;
-   transition:all 0.5s ease;
-    display: flex;
-}
 
 .fas.fa-check-circle.fa-lg
 {
