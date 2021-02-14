@@ -1,50 +1,130 @@
-.card__icon .fas.fa-heart
+.card__icon 
 {
     position:relative;
     top:19px;
     font-size: 21px;
     z-index: 1;
-    color: white;
-    transition: background 0.5s;
-    background-clip:text;
-    -webkit-background-clip: text;
-    text-shadow:0 0 2px black; 
-    
+    transform: translate(-50%, -50%);
 
-    &:hover
-    {
-        background-image: linear-gradient(173deg,#ff79da 0%, #d66cdb 39%,#ab5edc 85%, #9b59dc 100%);
-        color:transparent;
-        text-shadow: none;
-        transition:all 1s;
+    .heart{
+        position:relative;
+        z-index:1;
+        cursor: pointer;
+        top: 28px;  
+
+        &-color{
+            position:absolute;
+            left:0;
+            top:0;
+            z-index:-1;
+            background: linear-gradient(173deg,#ff79da 0%, #d66cdb 39%,#ab5edc 85%, #9b59dc 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            opacity:0;
+            transform: scale(0);
+            transition:.3s ease;
+        }
+    }
+
+    .heart:hover .heart-color{
+        transform:scale(1);
+        opacity:1;
+    }
+
+    .heart:hover{
+        background: linear-gradient(173deg,#ff79da 0%, #d66cdb 39%,#ab5edc 85%, #9b59dc 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -webkit-text-stroke: 0px white;
     }
 }
 
-.coeur .fas.fa-heart
+
+.coeur 
 {
-    position: relative;
-    left:19vw;
-    bottom:17px;
-    color: $gris_clair;
-    transition: background 0.5s;
-    background-clip: text;
-    -webkit-background-clip: text;
-    text-shadow:0 0 2px black; 
-    top:26%;
+    position:relative;
+    top:19px;
+    font-size: 21px;
+    z-index: 1;
+    transform: translate(-50%, -50%);
 
-    &:hover
-    {
-        background-image: linear-gradient(173deg,#ff79da 0%, #d66cdb 39%,#ab5edc 85%, #9b59dc 100%);
-        color:transparent;
-        text-shadow: none;
-        transition:all 1s;
+    .heart{
+        position:relative;
+        z-index:1;
+        cursor: pointer;
+        top:22px;
+        left: 75px;
+         @media (min-width: 280px)
+         {
+             left: 5px;
+             top:37px;
+        }
+        
+        
+         @media (min-width: 320px)
+         {
+             left: 35px;
+             top:22px;
+        }
+        
+        @media (min-width: 360px)
+        {
+            left: 77px;
+        }
+ @media (min-width: 375px)
+ {
+     left: 87px;
+        }
+        @media (min-width: 411px)
+        {
+            left: 113px;
+        }
+
+        @media (min-width: 540px)
+        {
+            left: 28px;
+        }
+        
+        @media (min-width: 768px)
+        {
+            left: 55px;
+        }
+
+        @media (min-width: 1022px)
+        {
+            left: 95px;
+        }
+
+        &-color{
+            position:absolute;
+            left:0;
+            top:0;
+            z-index:-1;
+            background: linear-gradient(173deg,#ff79da 0%, #d66cdb 39%,#ab5edc 85%, #9b59dc 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            opacity:0;
+            transform: scale(0);
+            transition:.3s ease;
+        }
     }
 
-    @media (min-width: 540px)
-    {
-        left:5vw;
+    .heart:hover .heart-color{
+        transform:scale(1);
+        opacity:1;
     }
+
+    .heart:hover{
+        background:linear-gradient(173deg,#ff79da 0%, #d66cdb 39%,#ab5edc 85%, #9b59dc 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -webkit-text-stroke: 0px white;
+    }
+
+
 }
+
+
 
 .entrees_food
 {
@@ -60,17 +140,18 @@
 
     &:hover
     {
-    overflow: hidden;
-    
-    .item_barre{
-        width: 20%;
-   transition:all 0.5s ease;
-                }
+        overflow: hidden;
+
+        .item_barre{
+            width: 20%;
+            transition:all 0.5s ease;
+        }
         .fas.fa-check-circle.fa-lg{
-             animation: moveCircle 1.25s;
+            animation: moveCircle 1.25s;
         }
     }
 }
+
 .item_barre
 {
 
@@ -81,6 +162,6 @@
     text-align: center;
     overflow: hidden;
     color: white;
-   transition:all 0.5s ease;
+    transition:all 0.5s ease;
     display: flex;
 }

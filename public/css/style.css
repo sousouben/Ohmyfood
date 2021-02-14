@@ -136,47 +136,119 @@
     transform: rotate(360deg);
   }
 }
-.card__icon .fas.fa-heart {
+.card__icon {
   position: relative;
   top: 19px;
   font-size: 21px;
   z-index: 1;
-  color: white;
-  transition: background 0.5s;
-  background-clip: text;
-  -webkit-background-clip: text;
-  text-shadow: 0 0 2px black;
+  transform: translate(-50%, -50%);
 }
-.card__icon .fas.fa-heart:hover {
-  background-image: linear-gradient(173deg, #ff79da 0%, #d66cdb 39%, #ab5edc 85%, #9b59dc 100%);
-  background-color: #d66cdb;
-  color: transparent;
-  text-shadow: none;
-  transition: all 1s;
+.card__icon .heart {
+  position: relative;
+  z-index: 1;
+  cursor: pointer;
+  top: 28px;
+}
+.card__icon .heart-color {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  background: linear-gradient(173deg, #ff79da 0%, #d66cdb 39%, #ab5edc 85%, #9b59dc 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  opacity: 0;
+  transform: scale(0);
+  transition: 0.3s ease;
+}
+.card__icon .heart:hover .heart-color {
+  transform: scale(1);
+  opacity: 1;
+}
+.card__icon .heart:hover {
+  background: linear-gradient(173deg, #ff79da 0%, #d66cdb 39%, #ab5edc 85%, #9b59dc 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 0px white;
 }
 
-.coeur .fas.fa-heart {
+.coeur {
   position: relative;
-  left: 19vw;
-  bottom: 17px;
-  color: #f6f6f6;
-  transition: background 0.5s;
-  background-clip: text;
-  -webkit-background-clip: text;
-  text-shadow: 0 0 2px black;
-  top: 26%;
+  top: 19px;
+  font-size: 21px;
+  z-index: 1;
+  transform: translate(-50%, -50%);
 }
-.coeur .fas.fa-heart:hover {
-  background-image: linear-gradient(173deg, #ff79da 0%, #d66cdb 39%, #ab5edc 85%, #9b59dc 100%);
-  background-color: #d66cdb;
-  color: transparent;
-  text-shadow: none;
-  transition: all 1s;
+.coeur .heart {
+  position: relative;
+  z-index: 1;
+  cursor: pointer;
+  top: 22px;
+  left: 75px;
+}
+@media (min-width: 280px) {
+  .coeur .heart {
+    left: 5px;
+    top: 37px;
+  }
+}
+@media (min-width: 320px) {
+  .coeur .heart {
+    left: 35px;
+    top: 22px;
+  }
+}
+@media (min-width: 360px) {
+  .coeur .heart {
+    left: 77px;
+  }
+}
+@media (min-width: 375px) {
+  .coeur .heart {
+    left: 87px;
+  }
+}
+@media (min-width: 411px) {
+  .coeur .heart {
+    left: 113px;
+  }
 }
 @media (min-width: 540px) {
-  .coeur .fas.fa-heart {
-    left: 5vw;
+  .coeur .heart {
+    left: 28px;
   }
+}
+@media (min-width: 768px) {
+  .coeur .heart {
+    left: 55px;
+  }
+}
+@media (min-width: 1022px) {
+  .coeur .heart {
+    left: 95px;
+  }
+}
+.coeur .heart-color {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  background: linear-gradient(173deg, #ff79da 0%, #d66cdb 39%, #ab5edc 85%, #9b59dc 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  opacity: 0;
+  transform: scale(0);
+  transition: 0.3s ease;
+}
+.coeur .heart:hover .heart-color {
+  transform: scale(1);
+  opacity: 1;
+}
+.coeur .heart:hover {
+  background: linear-gradient(173deg, #ff79da 0%, #d66cdb 39%, #ab5edc 85%, #9b59dc 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 0px white;
 }
 
 .entrees_food, .desserts_food, .plats_food {
