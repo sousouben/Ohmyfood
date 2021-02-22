@@ -203,11 +203,6 @@
     left: 77px;
   }
 }
-@media (min-width: 375px) {
-  .coeur .heart {
-    left: 87px;
-  }
-}
 @media (min-width: 411px) {
   .coeur .heart {
     left: 113px;
