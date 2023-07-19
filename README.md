@@ -1,7 +1,9 @@
 # souadmouatakide_3_13012021
+
 Ohmyfood
 
 ## Objectifs
+
 Développer un site proposant le menu de 4 grands restaurants parisiens.
 
 Permettre la réservation en ligne et la composition de menus.
@@ -55,4 +57,6 @@ Validation W3C HTML : à passer, warning autorisés
 Validation W3C CSS : à passer, warning autorisés
 Compatibilité : Dernières versions de Chrome et Firefox.
 
+### Documents du Projet
 
+Voir dossier documents
